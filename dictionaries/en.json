@@ -1,0 +1,52 @@
+{
+    "header": {
+        "catalog": "CATALOG",
+        "service": "SERVICES",
+        "about": "ABOUT US",
+        "partner": "PARTNERS",
+        "contact": "Contacts",
+        "consultation": "Consultation",
+        "search": "Search",
+        "modal": {
+            "title": "Want to get a free consultation?",
+            "placeholder": "Phone number",
+            "send": "Send",
+            "call": "or call the number",
+            "text": "After receiving the application, our specialist will contact you"
+        }
+    },
+    "hero": {
+        "title": "POWERFUL INDUSTRIAL DIESEL GENERATORS ARE YOUR KEY TO RELIABLE POWER!",
+        "text": "Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
+    },
+    "factory": {
+        "title": "About us",
+        "text": "JV LLC POWER MET INTERNATIONAL is your ideal partner for servicing and importing industrial generators. The Cannabis company specializes in servicing and supporting all leading brands of growers. Quality and reliable solutions for your energy costs to keep your business running smoothly. Experienced and professional staff guarantees high-quality service and prompt settings. Build your own storage and install reliable and efficient generator solutions. Trust us and feel the difference - your success is our job!",
+        "link": "Read more"
+    },
+    "catalog": {
+        "title": "Our catalog"
+    },
+    "design": {
+        "title": "Patented design cabin.",
+        "text": "Soundproofing and field mounting of cabin-equipped generators ensures reliable and quiet operation of the engine, avoiding the high noise level that occurs during engine operation."
+    },
+    "partner": {
+        "title": "Our partners"
+    },
+    "footer": {
+        "home": "Home",
+        "catalog": "Our catalog",
+        "service": "Our service",
+        "about": "About us",
+        "submit": "Submit your application",
+        "partner": "Our partners",
+        "contact": "Contacts",
+        "address": "Address",
+        "address_text": "Taras shevchenko street",
+        "mail": "Mail",
+        "consultation_title": "Get a free consultation",
+        "placeholder": "Phone number",
+        "send": "Send"
+    }
+}

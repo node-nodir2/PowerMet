@@ -1,0 +1,18 @@
+.categories_checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background: #f8f7f7;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories_checkbox:checked {
+    background-image: url("../../public//Images/check.svg");
+    background-color: #da291c;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

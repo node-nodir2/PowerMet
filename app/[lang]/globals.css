@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../public/Fonts/montserrat-v25-latin-regular.woff2")
+      format("woff2"),
+    url("../../public/Fonts/montserrat-v25-latin-regular.ttf")
+      format("truetype");
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../public/Fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    url("../../public/Fonts/montserrat-v25-latin-500.ttf") format("truetype");
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../public/Fonts/montserrat-v25-latin-600.woff2") format("woff2"),
+    url("../../public/Fonts/montserrat-v25-latin-600.ttf") format("truetype");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../public/Fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    url("../../public/Fonts/montserrat-v25-latin-700.ttf") format("truetype");
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1232px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Scrol style */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #da291c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5461ab;
+}
+
+::selection {
+  background-color: #da291c;
+  color: black;
+}

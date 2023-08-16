@@ -1,0 +1,52 @@
+{
+    "header": {
+        "catalog": "KATALOG",
+        "service": "XIZMATLAR",
+        "about": "BIZ HAQIMIZDA",
+        "partner": "HAMKORLIK",
+        "contact": "Aloqa",
+        "consultation": "Konsultatsiya",
+        "search": "Qidirish",
+        "modal": {
+            "title": "Ariza qabul qilingandan so'ng, bizning mutaxassisimiz siz bilan bog'lanadi",
+            "placeholder": "Telefon nomer",
+            "send": "Jo'natish",
+            "call": "yoki shu nomerga telefon qiling",
+            "text": "Murojaat qabul qilingandan so'ng mutaxassisimiz siz bilan bog'lanadi"
+        }
+    },
+    "hero": {
+        "title": "KUCHLI SANOAT DIZEL GENERATORLARI - SIZNING ISHLAB CHIQARILGAN KUCHGA SOLADI!",
+        "text": "Power Met International sizning biznesingiz muammosiz ishlashi uchun generator tizimlarini import qilish va o'rnatish bo'yicha mutaxassislardir."
+    },
+    "factory": {
+        "title": "Biz haqimizda",
+        "text": "MChJ POWER MET INTERNATIONAL QK sanoat generatorlariga xizmat ko'rsatish va import qilish bo'yicha sizning ideal hamkoringizdir. Cannabis kompaniyasi paxtakorlarning barcha etakchi brendlariga xizmat ko'rsatish va qo'llab-quvvatlashga ixtisoslashgan. Sizning biznesingiz muammosiz ishlashi uchun energiya xarajatlaringiz uchun sifatli va ishonchli echimlar. Tajribali va professional xodimlar yuqori sifatli xizmat ko'rsatish va tezkor sozlashlarni kafolatlaydi. O'z omboringizni yarating va ishonchli va samarali generator echimlarini o'rnating. Bizga ishoning va farqni his qiling - sizning muvaffaqiyatingiz bizning ishimizdir!",
+        "link": "Ko'proq o'qish"
+    },
+    "catalog": {
+        "title": "Bizning katalog"
+    },
+    "design": {
+        "title": "Patentlangan kabina dizayni",
+        "text": "Kabina bilan jihozlangan generatorlarning ovoz o'tkazmasligi va maydonchaga o'rnatilishi dvigatelning ishlashi paytida yuzaga keladigan yuqori shovqin darajasidan qochib, dvigatelning ishonchli va jim ishlashini ta'minlaydi."
+    },
+    "partner": {
+        "title": "Bizning hamkorlar"
+    },
+    "footer": {
+        "home": "Bosh sahifa",
+        "catalog": "Bizning katalog",
+        "service": "Bizning servis",
+        "about": "Biz haqimizda",
+        "submit": "Arizangizni yuborish",
+        "partner": "Bizning hamkorlar",
+        "contact": "Aloqa",
+        "address": "Manzil",
+        "address_text": "Taras Shevchenko ko'chasi",
+        "mail": "Pochta",
+        "consultation_title": "Bepul maslahat olish",
+        "placeholder": "Telefon raqamingiz",
+        "send": "Jo'natish"
+    }
+}

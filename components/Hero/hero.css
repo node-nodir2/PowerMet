@@ -1,0 +1,19 @@
+.swiper-pagination-bullet {
+    width: 100px;
+    height: 1px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.5s ease-in;
+    border: 1px solid white;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-pagination-bullet {
+        width: 70px;
+
+    }
+}
