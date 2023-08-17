@@ -235,11 +235,7 @@ const Header = ({ language, lang }) => {
                                             bg ? "text-[#333]" : "text-white"
                                         } hover:text-[#da291c] transition ease-in-out duration-200 uppercase`}
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/catalog`}
-                                        >
+                                        <Link href={`/${lang}/catalog`}>
                                             {language?.header?.catalog}
                                         </Link>
                                     </li>
@@ -248,11 +244,7 @@ const Header = ({ language, lang }) => {
                                             bg ? "text-[#333]" : "text-white"
                                         } hover:text-[#da291c] transition ease-in-out duration-200 uppercase`}
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/service`}
-                                        >
+                                        <Link href={`/${lang}/service`}>
                                             {language?.header?.service}
                                         </Link>
                                     </li>
@@ -261,9 +253,7 @@ const Header = ({ language, lang }) => {
                                             bg ? "text-[#333]" : "text-white"
                                         } hover:text-[#da291c] transition ease-in-out duration-200 uppercase`}
                                     >
-                                        <Link
-                                            href={`${!lang ? lang : ""}/about`}
-                                        >
+                                        <Link href={`/${lang}/about`}>
                                             {language?.header?.about}
                                         </Link>
                                     </li>
@@ -272,11 +262,7 @@ const Header = ({ language, lang }) => {
                                             bg ? "text-[#333]" : "text-white"
                                         } hover:text-[#da291c] transition ease-in-out duration-200 uppercase`}
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/partner`}
-                                        >
+                                        <Link href={`/${lang}/partner`}>
                                             {language?.header?.partner}
                                         </Link>
                                     </li>
@@ -490,11 +476,7 @@ const Header = ({ language, lang }) => {
                                         onClick={() => setShowModal(false)}
                                         className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200 uppercase"
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/catalog`}
-                                        >
+                                        <Link href={`/${lang}/catalog`}>
                                             {language?.header?.catalog}
                                         </Link>
                                     </li>
@@ -502,11 +484,7 @@ const Header = ({ language, lang }) => {
                                         onClick={() => setShowModal(false)}
                                         className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200 uppercase"
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/service`}
-                                        >
+                                        <Link href={`/${lang}/service`}>
                                             {language?.header?.service}
                                         </Link>
                                     </li>
@@ -514,9 +492,7 @@ const Header = ({ language, lang }) => {
                                         onClick={() => setShowModal(false)}
                                         className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200 uppercase"
                                     >
-                                        <Link
-                                            href={`${!lang ? lang : ""}/about`}
-                                        >
+                                        <Link href={`/${lang}/about`}>
                                             {language?.header?.about}
                                         </Link>
                                     </li>
@@ -524,11 +500,7 @@ const Header = ({ language, lang }) => {
                                         onClick={() => setShowModal(false)}
                                         className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200 uppercase"
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/partner`}
-                                        >
+                                        <Link href={`/${lang}/partner`}>
                                             {language?.header?.partner}
                                         </Link>
                                     </li>
@@ -536,11 +508,7 @@ const Header = ({ language, lang }) => {
                                         onClick={() => setShowModal(false)}
                                         className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200 uppercase"
                                     >
-                                        <Link
-                                            href={`${
-                                                !lang ? lang : ""
-                                            }/contact`}
-                                        >
+                                        <Link href={`/${lang}/contact`}>
                                             {language?.header?.contact}
                                         </Link>
                                     </li>
