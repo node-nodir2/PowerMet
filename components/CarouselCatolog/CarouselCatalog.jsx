@@ -33,6 +33,7 @@ const CarouselCatalog = ({ language }) => {
     useEffect(() => {
         getProducts();
     }, []);
+    console.log(products);
 
     return (
         <div className="bg-white mt-5 sm:mt-[68px]">
@@ -86,12 +87,12 @@ const CarouselCatalog = ({ language }) => {
                                             data-image={product?.image}
                                         >
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.CylinderArrangement}
+                                                {product?.model}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 Тип топлива{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.governorType}
+                                                    - {product?.typeOfRegular}
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
@@ -103,7 +104,7 @@ const CarouselCatalog = ({ language }) => {
                                             <p className="font-bold text-[#333] opacity-80">
                                                 Мощность{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.maxPover}
+                                                    - {product?.maxPover} kVa
                                                 </span>
                                             </p>
                                             <button

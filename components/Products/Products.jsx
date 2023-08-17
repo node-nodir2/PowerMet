@@ -212,7 +212,7 @@ const Product = ({ language }) => {
                                         />
                                         <div className="px-[18px] pb-5">
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.CylinderArrangement}
+                                                {product?.typeOfRegular}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 Тип топлива{" "}
