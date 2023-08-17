@@ -11,7 +11,7 @@ const Catalog = ({ params: lang }) => {
     const dictionary = getDictionary(lang);
     useEffect(() => {
         dictionary.then((res) => setLanguage(res));
-    }, []);
+    }, [dictionary]);
     return (
         <>
             <Hero

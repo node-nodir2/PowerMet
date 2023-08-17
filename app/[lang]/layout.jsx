@@ -57,16 +57,16 @@ export default function RootLayout({ children, params }) {
     const dictionary = getDictionary(params.lang);
     useEffect(() => {
         dictionary.then((res) => setLanguage(res));
-    }, []);
+    }, [dictionary]);
 
     return (
         <html lang={params.lang}>
             <Head />
             <body>
                 <Toaster />
-                <Header lang={params.lang} />
+                <Header language={language} />
                 {children}
-                <Footer lang={params.lang} />
+                <Footer language={language} />
                 <Link
                     onClick={() => {
                         setShowContact(true);

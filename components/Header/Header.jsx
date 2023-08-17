@@ -9,7 +9,6 @@ import axios from "axios";
 
 import { baseUrl, motionConfig } from "@/data";
 import Modal from "../Modal/Modal";
-import { getDictionary } from "@/get-dictionary";
 
 import Call from "../../public/Images/call.svg";
 import Planet_White from "../../public/Images/planet.svg";
@@ -25,13 +24,12 @@ import Mark_x from "@/public/Images/x.svg";
 
 const languages = ["uz", "ru", "en"];
 
-const Header = ({ lang }) => {
+const Header = ({ language }) => {
     const pathName = usePathname();
 
     const [showModal, setShowModal] = useState(false);
     const [showContact, setShowContact] = useState(false);
     const [scrollDown, setScrollDown] = useState(false);
-    const [language, setLanguage] = useState({});
     const [number, setNumber] = useState("");
     const [bg, setBg] = useState(false);
 
@@ -41,11 +39,6 @@ const Header = ({ lang }) => {
 
     const notifySuccess = () => toast.success("Successfully!");
     const notifyError = () => toast.error("Error");
-
-    const dictionary = getDictionary(lang);
-    useEffect(() => {
-        dictionary.then((res) => setLanguage(res));
-    }, []);
 
     const PostNumber = (e) => {
         e.preventDefault();

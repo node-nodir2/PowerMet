@@ -2,23 +2,16 @@
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 import { baseUrl } from "@/data";
-import { getDictionary } from "@/get-dictionary";
 
 import Logo from "../../public/Images/logoWhite.png";
 import Arrow from "../../public/Images/arrow-up.svg";
 
-const Footer = ({ lang }) => {
-    const [language, setLanguage] = useState({});
+const Footer = ({ language }) => {
     const [number, setNumber] = useState("");
-
-    const dictionary = getDictionary(lang);
-    useEffect(() => {
-        dictionary.then((res) => setLanguage(res));
-    }, []);
 
     const notifySuccess = () => toast.success("Successfully!");
     const notifyError = () => toast.error("Network Error");

@@ -15,7 +15,7 @@ export default function Home({ params: { lang } }) {
     const dictionary = getDictionary(lang);
     useEffect(() => {
         dictionary.then((res) => setLanguage(res));
-    }, []);
+    }, [dictionary]);
 
     return (
         <>
