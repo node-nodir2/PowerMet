@@ -1,4 +1,8 @@
 {
+    "toast": {
+        "success": "Muvaffaqiyatli yuborildi!",
+        "error": "Xatolik yuz berdi"
+    },
     "header": {
         "catalog": "KATALOG",
         "service": "XIZMATLAR",

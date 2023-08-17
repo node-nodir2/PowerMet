@@ -27,8 +27,18 @@ const Hero = ({ language }) => {
     const [hide, setHide] = useState(false);
     const [number, setNumber] = useState("");
 
-    const notifySuccess = () => toast.success("Successfully!");
-    const notifyError = () => toast.error("Error");
+    const notifySuccess = () => toast.success(language?.toast?.success);
+    const notifyError = () => toast.error(language?.toast?.error);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (window.screen.width < 650) {
+                setHide(true);
+            } else {
+                setHide(false);
+            }
+        }
+    }, []);
 
     const PostNumber = (e) => {
         e.preventDefault();
@@ -52,16 +62,6 @@ const Hero = ({ language }) => {
                 }, 3000);
             });
     };
-
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            if (window.screen.width < 650) {
-                setHide(true);
-            } else {
-                setHide(false);
-            }
-        }
-    }, []);
 
     return (
         <>

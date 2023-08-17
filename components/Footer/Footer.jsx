@@ -13,8 +13,8 @@ import Arrow from "../../public/Images/arrow-up.svg";
 const Footer = ({ language }) => {
     const [number, setNumber] = useState("");
 
-    const notifySuccess = () => toast.success("Successfully!");
-    const notifyError = () => toast.error("Network Error");
+    const notifySuccess = () => toast.success(language?.toast?.success);
+    const notifyError = () => toast.error(language?.toast?.error);
 
     const PostNumber = (e) => {
         e.preventDefault();

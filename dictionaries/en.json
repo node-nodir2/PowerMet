@@ -1,4 +1,8 @@
 {
+    "toast": {
+        "success": "Successfully!",
+        "error": "Error"
+    },
     "header": {
         "catalog": "CATALOG",
         "service": "SERVICES",

@@ -1,4 +1,8 @@
 {
+    "toast": {
+        "success": "Успешно!",
+        "error": "Ошибка"
+    },
     "header": {
         "catalog": "КАТАЛОГ",
         "service": "УСЛУГИ",

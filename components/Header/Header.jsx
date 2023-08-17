@@ -37,8 +37,8 @@ const Header = ({ language, lang }) => {
     const [drop1, setDrop1] = useState(false);
     const [search, setSearch] = useState(false);
 
-    const notifySuccess = () => toast.success("Successfully!");
-    const notifyError = () => toast.error("Error");
+    const notifySuccess = () => toast.success(language?.toast?.success);
+    const notifyError = () => toast.error(language?.toast?.error);
 
     const PostNumber = (e) => {
         e.preventDefault();

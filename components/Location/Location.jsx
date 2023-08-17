@@ -9,8 +9,8 @@ import { baseUrl } from "@/data";
 const Location = ({ language }) => {
     const [number, setNumber] = useState("");
 
-    const notifySuccess = () => toast.success("Successfully!");
-    const notifyError = () => toast.error("Error");
+    const notifySuccess = () => toast.success(language?.toast?.success);
+    const notifyError = () => toast.error(language?.toast?.error);
 
     const PostNumber = (e) => {
         e.preventDefault();
