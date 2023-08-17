@@ -24,7 +24,7 @@ import Mark_x from "@/public/Images/x.svg";
 
 const languages = ["uz", "ru", "en"];
 
-const Header = ({ language }) => {
+const Header = ({ language, lang }) => {
     const pathName = usePathname();
 
     const [showModal, setShowModal] = useState(false);

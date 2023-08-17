@@ -64,7 +64,7 @@ export default function RootLayout({ children, params }) {
             <Head />
             <body>
                 <Toaster />
-                <Header language={language} />
+                <Header language={language} lang={params.lang} />
                 {children}
                 <Footer language={language} />
                 <Link
