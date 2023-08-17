@@ -1,0 +1,88 @@
+{
+    "header": {
+        "catalog": "KATALOG",
+        "service": "HYZMATLAR",
+        "about": "BIZ HAKDA",
+        "partner": "Hyzmatdaşlar",
+        "contact": "Aragatnaşyklar",
+        "consultation": "Maslahat",
+        "search": "Gözlemek",
+        "modal": {
+            "title": "Mugt maslahat almak isleýärsiňizmi?",
+            "placeholder": "Telefon belgisi",
+            "send": "Iber",
+            "call": "ýa-da belgä jaň ediň",
+            "text": "Arza alanymyzdan soň, hünärmenimiz siziň bilen habarlaşar"
+        }
+    },
+    "hero": {
+        "title": "Güýçli SANATÇY DIZEL GENERATORLARY YNANMAK GÜOWÇLIGINIE AÇYGY! YZ!",
+        "text": "Power Met International, işiňiziň kadaly dowam etmegi üçin generator ulgamlaryny import etmek we gurmak boýunça hünärmenlerdir."
+    },
+    "factory": {
+        "title": "Biz hakda",
+        "text": "JV LLC POWER MET INTERNATIONAL, senagat generatorlaryna hyzmat etmek we import etmek üçin iň gowy hyzmatdaşyňyzdyr. Cannabis kompaniýasy ähli öňdebaryjy markalara hyzmat etmekde we goldamakda ýöriteleşendir. Işiňiziň kadaly dowam etmegi üçin energiýa çykdajylaryňyz üçin hil we ygtybarly çözgütler. Tejribeli we hünärmen işgärler ýokary hilli hyzmaty we gyssagly sazlamalary kepillendirýärler. Öz ammaryňyzy guruň we ygtybarly we täsirli generator çözgütlerini guruň. Bize ynanyň we tapawudyny duýuň - üstünlikiňiz biziň işimizdir!",
+        "link": "Koprak oka"
+    },
+    "catalog": {
+        "title": "Biziň katalogymyz"
+    },
+    "design": {
+        "title": "Patentlenen dizaýn kabinasy.",
+        "text": "Kabin bilen enjamlaşdyrylan generatorlaryň ses izolýasiýasy we meýdan gurnamasy, hereketlendirijiniň işleýşi wagtynda ýüze çykýan ýokary ses derejesinden gaça durup, hereketlendirijiniň ygtybarly we asuda işlemegini üpjün edýär."
+    },
+    "partner": {
+        "title": "Hyzmatdaşlarymyz"
+    },
+    "footer": {
+        "home": "Baş sahypa",
+        "catalog": "Bizning katalog",
+        "service": "Biziň katalogymyz",
+        "about": "Biz hakda",
+        "submit": "Arzaňyzy iberiň",
+        "partner": "Hyzmatdaşlarymyz",
+        "contact": "Aragatnaşyk",
+        "address": "Salgysy",
+        "address_text": "Taras Şewçenko köçesi",
+        "mail": "Poçta",
+        "consultation_title": "Mugt maslahat alyň",
+        "placeholder": "elefon belgiňiz",
+        "send": "Eltip bermek"
+    },
+    "hero_catalog": {
+        "home": "Baş sahypa",
+        "link": "Katalog",
+        "title": "ALhli generatorlaryň we öndürijileriň katalogyny dolduryň",
+        "text": "Bu sahypada süzgüçler baradaky ähli maglumatlary görüp we her generatoryň pdf faýlyny göçürip alyp bilersiňiz",
+        "type": "ÖNÜMLER"
+    },
+    "hero_service": {
+        "link": "Hyzmatlar",
+        "title": "ÖSÜŞ HYZMATLARYMYZ",
+        "text": "Bu sahypada, Power Met International-yň ähli hyzmatlary bilen tanyşmaga mümkinçilik bar"
+    },
+    "hero_about": {
+        "link": "Biz hakda",
+        "title": "Biz hakda",
+        "text": "Mahabatymyz, islendik assortimentiň generatorlaryny satmak we oturtmak ýaly hyzmatlary hödürleýär.",
+        "documentation": "Resminamalar",
+        "numbers": "Sanlar"
+    },
+    "hero_partner": {
+        "link": "Hyzmatdaşlarymyz",
+        "title": "BIZ 7 ÜPJÜNÇILIK BILEN IŞLE. .RIS",
+        "text": "Bu ýerde üpjün edijileriň her biri bilen tanşyp bilersiňiz",
+        "part": {
+            "title": "Hyzmatdaşlarymyz",
+            "head": "KIM bilen işleýäris?",
+            "text": "Kompaniýamyz, senagat generatorlarynyň iň oňat öndürijileri bilen hyzmatdaşlyga buýsanýar. Kompaniýamyz önümlerini bazara öňdebaryjy importçy hökmünde hödürleýär. Müşderilerimize dürli pudaklarda we iş ugurlarynda ygtybarly we täsirli elektrik üpjünçiligi berýän iň oňat generatorlary hödürleýäris.",
+            "link": "Katalogy görüň"
+        }
+    },
+    "hero_contact": {
+        "link": "Baglanyşyklar",
+        "title": "ABŞ bilen 24/7 habarlaşmagyň ähli ýollary",
+        "text": "Müşderilerimize 24/7 goldaw berýäris",
+        "address": "Taras Şewçenko köçesi 34. Daşkent, Mirabad Özbegistan"
+    }
+}

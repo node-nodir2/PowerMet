@@ -22,7 +22,7 @@ import Search from "../../public/Images/search.svg";
 import Search_Black from "../../public/Images/search_black.svg";
 import Mark_x from "@/public/Images/x.svg";
 
-const languages = ["uz", "ru", "en"];
+const languages = ["uz", "ru", "en", "tr", "tj", "kz", "kg"];
 
 const Header = ({ language, lang }) => {
     const pathName = usePathname();
