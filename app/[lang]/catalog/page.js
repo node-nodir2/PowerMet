@@ -1,30 +1,24 @@
-"use client";
-import { useState, useEffect } from "react";
 import { getDictionary } from "@/get-dictionary";
 
 import Hero from "@/components/HeroForPage/Hero";
 import Product from "@/components/Products/Products";
 
-const Catalog = ({ params: lang }) => {
-    const [language, setLanguage] = useState({});
+const Catalog = async ({ params: { lang } }) => {
+  const dictionary = await getDictionary(lang);
 
-    const dictionary = getDictionary(lang);
-    useEffect(() => {
-        dictionary.then((res) => setLanguage(res));
-    }, [dictionary]);
-    return (
-        <>
-            <Hero
-                title={language?.hero_catalog?.title}
-                text={language?.hero_catalog?.text}
-                route={language?.hero_catalog?.link}
-                link={true}
-                bgImage={"catalog"}
-                language={language}
-            />
-            <Product language={language} />
-        </>
-    );
+  return (
+    <>
+      <Hero
+        title={dictionary?.hero_catalog?.title}
+        text={dictionary?.hero_catalog?.text}
+        route={dictionary?.hero_catalog?.link}
+        link 
+        bgImage={"catalog"}
+        language={dictionary}
+      />
+      <Product language={dictionary} />
+    </>
+  );
 };
 
 export default Catalog;

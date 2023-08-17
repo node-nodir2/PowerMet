@@ -1,30 +1,24 @@
-"use client";
-import { useState, useEffect } from "react";
 import { getDictionary } from "@/get-dictionary";
 
 import Hero from "@/components/HeroForPage/Hero";
 import Partner from "@/components/Partner/Partner";
 
-const Partnership = ({ params: lang }) => {
-    const [language, setLanguage] = useState({});
+const Partnership = async ({ params: { lang } }) => {
+  const dictionary = await getDictionary(lang);
 
-    const dictionary = getDictionary(lang);
-    useEffect(() => {
-        dictionary.then((res) => setLanguage(res));
-    }, [dictionary]);
-    return (
-        <>
-            <Hero
-                title={language?.hero_partner?.title}
-                text={language?.hero_partner?.text}
-                route={language?.hero_partner?.link}
-                language={language}
-                link={false}
-                bgImage={"partner"}
-            />
-            <Partner language={language} />
-        </>
-    );
+  return (
+    <>
+      <Hero
+        title={dictionary?.hero_partner?.title}
+        text={dictionary?.hero_partner?.text}
+        route={dictionary?.hero_partner?.link}
+        language={dictionary}
+        link={false}
+        bgImage={"partner"}
+      />
+      <Partner language={dictionary} />
+    </>
+  );
 };
 
 export default Partnership;

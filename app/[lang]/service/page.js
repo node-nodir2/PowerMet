@@ -1,30 +1,23 @@
-"use client";
-import { useState, useEffect } from "react";
 import { getDictionary } from "@/get-dictionary";
 
 import Hero from "@/components/HeroForPage/Hero";
 import Services from "@/components/Services/Services";
 
-const Service = ({ params: lang }) => {
-    const [language, setLanguage] = useState({});
-
-    const dictionary = getDictionary(lang);
-    useEffect(() => {
-        dictionary.then((res) => setLanguage(res));
-    }, [dictionary]);
-    return (
-        <>
-            <Hero
-                title={language?.hero_service?.title}
-                text={language?.hero_service?.text}
-                route={language?.hero_service?.link}
-                link={true}
-                bgImage={"service"}
-                language={language}
-            />
-            <Services />
-        </>
-    );
+const Service = async ({ params: { lang } }) => {
+  const dictionary = await getDictionary(lang);
+  return (
+    <>
+      <Hero
+        title={dictionary?.hero_service?.title}
+        text={dictionary?.hero_service?.text}
+        route={dictionary?.hero_service?.link}
+        link
+        bgImage={"service"}
+        language={dictionary}
+      />
+      <Services />
+    </>
+  );
 };
 
 export default Service;
