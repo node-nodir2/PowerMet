@@ -6,7 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 import { baseUrl } from "@/data";
 
-const Location = () => {
+const Location = ({ language }) => {
     const [number, setNumber] = useState("");
 
     const notifySuccess = () => toast.success("Successfully!");
@@ -46,7 +46,7 @@ const Location = () => {
                 ></iframe>
                 <div className="max-w-[590px] w-full py-[30px] px-[25px] sm:px-[45px] bg-[#da291c] rounded-[10px]">
                     <h3 className="font-normal text-[24px] text-white text-center leading-9">
-                        Хотите получить бесплатную консультацию?
+                        {language?.header?.modal?.title}
                     </h3>
                     <form
                         autoComplete="off"
@@ -57,19 +57,19 @@ const Location = () => {
                             type="text"
                             required
                             onChange={(e) => setNumber(e.target.value.trim())}
-                            placeholder="Номер телефона"
+                            placeholder={language?.header?.modal?.placeholder}
                             className="w-full h-[45px] sm:h-[54px] font-normal border-[1.5px] border-white bg-input-bg-contact rounded-lg outline-none text-[16px] text-white placeholder-white px-[25px]"
                         />
                         <button
                             className="w-full h-[45px] sm:h-[54px] font-bold text-[18px] text-[#da291c] text-center bg-[#fff] rounded-lg"
                             type="submit"
                         >
-                            Отправить
+                            {language?.header?.modal?.send}
                         </button>
                     </form>
                     <div className="my-5">
                         <p className="font-normal text-[26px] text-white text-center">
-                            или позвоните на номер
+                            {language?.header?.modal?.call}
                         </p>
                         <Link
                             href="tel:+998980013666"
@@ -80,7 +80,7 @@ const Location = () => {
                         </Link>
                     </div>
                     <p className="max-w-[312px] w-full mx-auto text-white text-[16px] opacity-80 text-center">
-                        После получения заявки наш специалист свяжется с вами
+                        {language?.header?.modal?.text}
                     </p>
                 </div>
             </div>

@@ -1,9 +1,9 @@
-const Numbers = () => {
+const Numbers = ({ language }) => {
     return (
         <section className="bg-white">
             <div className="container sm:!pt-[57px] !py-[20px] sm:!pb-[95px]">
                 <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center">
-                    Цифры
+                    {language?.hero_about?.numbers}
                 </h2>
                 <ul className="flex flex-col sm:flex-row items-center justify-between mt-5">
                     <li className="max-w-[338px] w-full ">

@@ -39,6 +39,7 @@ const Hero = ({ language }) => {
             .then((res) => {
                 if (res.status === 200) {
                     notifySuccess();
+                    e.target.reset();
                 }
             })
             .catch(() => {
@@ -75,7 +76,7 @@ const Hero = ({ language }) => {
                     clickable: true,
                 }}
                 modules={[EffectFade, Navigation, Pagination, Autoplay]}
-                className={`mySwiper w-full h-[800px] md:h-[950px] bg-hero-gradient duration-300`}
+                className={`mySwiper w-full h-[800px] md:h-[950px] duration-300`}
             >
                 <SwiperSlide>
                     <Image

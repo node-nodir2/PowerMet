@@ -6,15 +6,6 @@ import Client from "../Clients/Clients";
 import PartnerImg from "@/public/Images/partner.png";
 import PartnerImgMobile from "@/public/Images/news.png";
 
-let datas = [
-    {
-        id: 1,
-        title: "С КЕМ МЫ РАБОТАЕМ?",
-        description:
-            "Наша фирма гордится партнерством с лучшими производителями индустриальных генераторов. В качестве ведущего импортера, наша компания представляет их продукцию на рынке. Мы стремимся предлагать клиентам только лучшие генераторы, обеспечивая надежное и эффективное энергоснабжение в различных отраслях и сферах деятельности.",
-    },
-];
-
 const Arrow = (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -42,11 +33,19 @@ const Arrow = (
     </svg>
 );
 
-const Partner = () => {
+const Partner = ({ language }) => {
+    let datas = [
+        {
+            id: 1,
+            title: language?.hero_partner?.part?.head,
+            description: language?.hero_partner?.part?.text,
+        },
+    ];
+
     return (
         <section className="container !py-[30px] sm:!py-[42px] space-y-5 sm:space-y-[30px]">
             <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center">
-                Наши партнеры
+                {language?.hero_partner?.part?.title}
             </h2>
             {datas?.map((data) => (
                 <div
@@ -70,7 +69,7 @@ const Partner = () => {
                                 className="font-medium text-[20px] text-[#da291c]"
                                 href={"/catalog"}
                             >
-                                Посмотреть каталог
+                                {language?.hero_partner?.part?.link}
                             </Link>
                             {Arrow}
                         </div>

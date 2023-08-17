@@ -1,0 +1,25 @@
+.hero-first {
+    background-image: url("../../public/Images/hero_car1.png");
+}
+
+.hero-second {
+    background-image: url("../../public/Images/hero_car_third.png");
+}
+
+.hero-third {
+    background-image: url("../../public/Images/hero_car1.png");
+}
+
+.hero-fourth {
+    background-image: url("../../public/Images/hero_car4.png");
+}
+
+.hero-fifth {
+    background-image: url("../../public/Images/hero_car5.png");
+}
+
+@media only screen and (max-width: 680px) {
+    .hero-fifth {
+        background-image: url("../../public/Images/hero_car_mobile5.png");
+    }
+}

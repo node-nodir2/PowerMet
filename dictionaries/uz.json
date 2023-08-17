@@ -48,5 +48,41 @@
         "consultation_title": "Bepul maslahat olish",
         "placeholder": "Telefon raqamingiz",
         "send": "Jo'natish"
+    },
+    "hero_catalog": {
+        "home": "Bosh sahifa",
+        "link": "Katalog",
+        "title": "BARCHA GENERATOR VA ISHLAB CHIQARISHCHILARNING TO'LIQ KATALOGI",
+        "text": "Ushbu sahifada siz filtrlar bo'yicha barcha ma'lumotlarni ko'rishingiz va har bir generatorning pdf faylini yuklab olishingiz mumkin",
+        "type": "ISHLAB CHIQARUVCHILAR"
+    },
+    "hero_service": {
+        "link": "Xizmatlar",
+        "title": "AKSIYA XIZMATLARIMIZ",
+        "text": "Ushbu sahifada siz Power Met International kompaniyasining barcha xizmatlari bilan tanishish imkoniga egasiz"
+    },
+    "hero_about": {
+        "link": "Biz haqimizda",
+        "title": "Biz haqimizda",
+        "text": "Bizning aksiyamiz har qanday assortimentdagi generatorlarni sotish va o'rnatish kabi xizmatlarni taqdim etadi.",
+        "documentation": "Hujjatlar",
+        "numbers": "Raqamlar"
+    },
+    "hero_partner": {
+        "link": "Bizning hamkorlar",
+        "title": "BIZ BILAN 7 DAN ORQAGI TA'MINOTCHILAR ISHLAYDI",
+        "text": "Bu erda siz etkazib beruvchilarning har biri bilan tanishishingiz mumkin",
+        "part": {
+            "title": "Bizning hamkorlarimiz",
+            "head": "BIZ KIM BILAN ISHLASHAMIZ?",
+            "text": "Firmamız eng yaxshi sanoat generatorlari ishlab chiqaruvchilari bilan hamkorlik qilishdan faxrlanadi. Kompaniyamiz yetakchi importyor sifatida o‘z mahsulotlarini bozorga taqdim etadi. Biz mijozlarimizga turli sanoat va faoliyat sohalarida ishonchli va samarali elektr ta'minotini ta'minlovchi eng yaxshi generatorlarni taklif qilishga.",
+            "link": "Katalogni ko'rish"
+        }
+    },
+    "hero_contact": {
+        "link": "Aloqalar",
+        "title": "BIZGA 24/7 BOG'LANISH UCHUN HAMMA YO'LLARI",
+        "text": "Biz mijozlarimizga 24/7 yordam beramiz",
+        "address": "Taras Shevchenko ko'chasi 34. Toshkent, Mirobod O'zbekiston"
     }
 }

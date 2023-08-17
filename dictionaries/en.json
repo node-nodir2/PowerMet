@@ -48,5 +48,41 @@
         "consultation_title": "Get a free consultation",
         "placeholder": "Phone number",
         "send": "Send"
+    },
+    "hero_catalog": {
+        "home": "Home",
+        "link": "Catalog",
+        "title": "FULL CATALOG OF ALL GENERATORS AND MANUFACTURERS",
+        "text": "On this page you can see all the information on the filters and also download the pdf of each generator",
+        "type": "MANUFACTURERS"
+    },
+    "hero_service": {
+        "link": "Services",
+        "title": "OUR CAMPAIGN SERVICES",
+        "text": "On this page you have the opportunity to get acquainted with all the services of Power Met International"
+    },
+    "hero_about": {
+        "link": "About us",
+        "title": "About Us",
+        "text": "Our campaign provides services such as the sale and installation of generators in any assortment.",
+        "documentation": "Documentation",
+        "numbers": "Numbers"
+    },
+    "hero_partner": {
+        "link": "Our partners",
+        "title": "MORE THAN 7 SUPPLIERS WORK WITH US",
+        "text": "Here you can get acquainted with each of the suppliers",
+        "part": {
+            "title": "Our partners",
+            "head": "WHO DO WE WORK WITH?",
+            "text": "Our firm is proud to partner with the best manufacturers of industrial generators. As a leading importer, our company introduces their products to the market. We strive to offer our customers only the best generators, providing a reliable and efficient power supply in various industries and areas of activity.",
+            "link": "View catalog"
+        }
+    },
+    "hero_contact": {
+        "link": "Contacts",
+        "title": "ALWAYS TO CONTACT US 24/7",
+        "text": "We provide 24/7 support to our customers",
+        "address": "Taras shevchenko street.34.Tashkent,Mirabad Uzbekistan"
     }
 }

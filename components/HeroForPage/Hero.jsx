@@ -1,19 +1,21 @@
 import Link from "next/link";
 
-const Hero = ({ title, text, link, route, bgImage }) => {
+import "./hero.css";
+
+const Hero = ({ title, text, link, route, bgImage, language }) => {
     return (
         <section
             className={`${
                 bgImage == "about"
-                    ? "bg-hero-first"
+                    ? "hero-first"
                     : bgImage == "catalog"
-                    ? "bg-hero-second"
+                    ? "hero-second"
                     : bgImage == "service"
-                    ? "bg-hero-third"
+                    ? "hero-third"
                     : bgImage == "partner"
-                    ? "bg-hero-fourth"
+                    ? "hero-fourth"
                     : bgImage == "contact"
-                    ? "bg-hero-fifth-mobile sm:bg-hero-fifth"
+                    ? "hero-fifth"
                     : null
             } bg-no-repeat bg-cover pt-[75.7px] sm:pt-[156px] !pb-[260px] sm:!pb-[130px]`}
         >
@@ -23,7 +25,7 @@ const Hero = ({ title, text, link, route, bgImage }) => {
                         className="font-normal text-[20px] text-link-color"
                         href={"/"}
                     >
-                        Главная /{" "}
+                        {language?.hero_catalog?.home} /{" "}
                     </Link>{" "}
                     <span className="inline-block font-normal text-[20px] text-white ml-[3px]">
                         {route}
@@ -63,7 +65,7 @@ const Hero = ({ title, text, link, route, bgImage }) => {
                             href={`tel:+998980013666`}
                             className="flex items-center w-fit font-semibold text-white text-[18px] bg-[#da291c] rounded-[8px] px-[30px] py-[15px] mt-[32px]"
                         >
-                            Консультация
+                            {language?.header?.consultation}
                         </Link>
                     ) : null}
                 </div>

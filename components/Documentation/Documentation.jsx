@@ -105,12 +105,12 @@ const datas = [
     },
 ];
 
-const Documentation = () => {
+const Documentation = ({ language }) => {
     return (
         <section className="bg-white">
             <div className="max-w-[1350px] w-full mx-auto px-[16px] !pb-[20px] sm:!pb-[70px]">
                 <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center py-[30px] sm:py-[57px]">
-                    Документация
+                    {language?.hero_about?.documentation}
                 </h2>
                 <Swiper
                     spaceBetween={30}

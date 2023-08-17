@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
 import Head from "./head";
-import { Inter } from "next/font/google";
 import toast, { Toaster } from "react-hot-toast";
 
 import { baseUrl } from "@/data";
@@ -19,8 +18,6 @@ import Mark_x from "@/public/Images/x.svg";
 // import Loader from "@/public/Images/loader_io.svg";
 
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({ lang: locale }));
@@ -43,6 +40,7 @@ export default function RootLayout({ children, params }) {
             .then((res) => {
                 if (res.status === 200) {
                     notifySuccess();
+                    e.target.reset();
                 }
             })
             .catch(() => {
@@ -52,6 +50,7 @@ export default function RootLayout({ children, params }) {
                 setTimeout(() => {
                     setShowContact(false);
                 }, 3000);
+                e.target.reset();
             });
     };
 
@@ -63,7 +62,7 @@ export default function RootLayout({ children, params }) {
     return (
         <html lang={params.lang}>
             <Head />
-            <body className={inter.className}>
+            <body>
                 <Toaster />
                 <Header lang={params.lang} />
                 {children}
@@ -109,7 +108,9 @@ export default function RootLayout({ children, params }) {
                             <input
                                 type="text"
                                 required
-                                placeholder={language?.header?.modal?.placeholder}
+                                placeholder={
+                                    language?.header?.modal?.placeholder
+                                }
                                 onChange={(e) =>
                                     setNumber(e.target.value.trim())
                                 }

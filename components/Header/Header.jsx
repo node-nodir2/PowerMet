@@ -56,6 +56,7 @@ const Header = ({ lang }) => {
             .then((res) => {
                 if (res.status === 200) {
                     notifySuccess();
+                    e.target.reset();
                 }
             })
             .catch(() => {
@@ -65,6 +66,7 @@ const Header = ({ lang }) => {
                 setTimeout(() => {
                     setShowContact(false);
                 }, 3000);
+                e.target.reset();
             });
     };
 

@@ -6,6 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 
 import { baseUrl } from "@/data";
 
+import "./contact.css";
+
 const FormContact = ({ language }) => {
     const [number, setNumber] = useState("");
 
@@ -21,6 +23,7 @@ const FormContact = ({ language }) => {
             .then((res) => {
                 if (res.status === 200) {
                     notifySuccess();
+                    e.target.reset();
                 }
             })
             .catch(() => {
@@ -32,7 +35,7 @@ const FormContact = ({ language }) => {
     };
 
     return (
-        <section className="bg-contact-pattern bg-no-repeat bg-cover bg-fixed pt-[90px] sm:pt-[120px] pb-[90px] mt-[30px] sm:mt-[57px]">
+        <section className="contact-pattern bg-no-repeat bg-cover bg-fixed pt-[90px] sm:pt-[120px] pb-[90px] mt-[30px] sm:mt-[57px]">
             <Toaster />
             <div className="container flex items-center justify-between">
                 <p></p>

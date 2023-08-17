@@ -13,18 +13,6 @@ module.exports = {
             montserrat: ['"Montserrat", "sans-serif'],
         },
         extend: {
-            backgroundImage: {
-                "contact-pattern": "url('/public/Images/hero_car.png')",
-                "hero-first": "url('/public/Images/hero_car1.png')",
-                "hero-second": "url('/public/Images/hero_car_third.png')",
-                "hero-third": "url('/public/Images/hero_car1.png')",
-                "hero-fourth": "url('/public/Images/hero_car4.png')",
-                "hero-fifth": "url('/public/Images/hero_car5.png')",
-                "hero-fifth-mobile":
-                    "url('/public/Images/hero_car_mobile5.png')",
-                "hero-gradient":
-                    "radial-gradient(50.01% 50.00% at 62.40% 50.00%, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.69) 100%)",
-            },
             backgroundColor: {
                 "input-bg": "rgba(71, 98, 255, 0.08)",
                 "input-bg-contact": "rgba(255, 255, 255, 0.10)",

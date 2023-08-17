@@ -1,4 +1,5 @@
 export const baseUrl = "https://nanopro.uz";
+// export const baseUrl = "http://128.199.132.13:6161";
 
 export const motionConfig = {
   layout: true,
