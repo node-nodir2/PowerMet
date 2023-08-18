@@ -86,7 +86,7 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5461ab;
+  background: #96180f;
 }
 
 ::selection {

@@ -29,7 +29,15 @@
         "link": "Ko'proq o'qish"
     },
     "catalog": {
-        "title": "Bizning katalog"
+        "title": "Bizning katalog",
+        "model": "Model",
+        "fuel_type": "Yoqilg'i turi",
+        "power": "Kuch",
+        "in_detail": "Batafsil",
+        "cylinder": "Silindr hajmi",
+        "ampere": "Amper",
+        "regulator_type": "Regulyator turi",
+        "download": "Yuklab olish"
     },
     "design": {
         "title": "Patentlangan kabina dizayni",

@@ -29,7 +29,15 @@
         "link": "Read more"
     },
     "catalog": {
-        "title": "Our catalog"
+        "title": "Our catalog",
+        "model": "Model",
+        "fuel_type": "Fuel type",
+        "power": "Power",
+        "in_detail": "In detail",
+        "cylinder": "Cylinder volume",
+        "ampere": "Ampere",
+        "regulator_type": "Regulator type",
+        "download": "Download"
     },
     "design": {
         "title": "Patented design cabin.",

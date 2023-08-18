@@ -90,7 +90,7 @@ const CarouselCatalog = ({ language }) => {
                                                 {product?.category?.name}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
-                                                Тип топлива{" "}
+                                                {language?.catalog?.fuel_type}{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
                                                     -{" "}
                                                     {
@@ -100,14 +100,14 @@ const CarouselCatalog = ({ language }) => {
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
-                                                Модель{" "}
+                                                {language?.catalog?.model}{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
                                                     -{" "}
                                                     {product?.subProduct?.model}
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
-                                                Мощность{" "}
+                                                {language?.catalog?.power}{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
                                                     -{" "}
                                                     {product?.subProduct?.pover}{" "}
@@ -122,7 +122,7 @@ const CarouselCatalog = ({ language }) => {
                                                 }}
                                                 className="w-full mx-auto font-medium text-[18px] text-white text-center py-2 bg-[#da291c] rounded-lg mt-[14px]"
                                             >
-                                                Подробно
+                                                {language?.catalog?.in_detail}
                                             </button>
                                         </div>
                                     </motion.div>
@@ -159,26 +159,41 @@ const CarouselCatalog = ({ language }) => {
                         height={195}
                         alt="product-image"
                     />
-                    <div className="flex flex-col items-center justify-center text-center sm:text-start">
+                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
                         <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
-                            Название + кВа
+                            {itemProperties?.category?.name}
                         </h2>
                         <ul className="mt-[30px]">
-                            <li className="font-bold text-[16px] text-text-color2 leading=[20px]">
-                                Модель - кВа
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                                {language?.catalog?.model} -{" "}
+                                <span className="inline-block font-medium text-text-color2">
+                                    {itemProperties?.model}
+                                </span>
                             </li>
-                            <li className="font-bold text-[16px] text-text-color2 leading=[20px]">
-                                Макс.общая выходная мощность (кВт/л.с.)
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                                <span className="inline-block font-medium text-text-color2">
+                                    {itemProperties?.subProduct?.model}
+                                </span>
                             </li>
-                            <li className="font-bold text-[16px] text-text-color2 leading=[20px]">
-                                Объем цилиндра (л){" "}
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                                {language?.catalog?.cylinder} -{" "}
+                                <span className="inline-block font-medium text-text-color2">
+                                    {itemProperties?.CylinderArrangement}
+                                    (л)
+                                </span>
                             </li>
-                            <li className="font-bold text-[16px] text-text-color2 leading=[20px]">
-                                Построение цилиндров Диаметр цилиндра x Ход
-                                поршня (мм*мм)
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                                {language?.catalog?.ampere} -{" "}
+                                <span className="inline-block font-medium text-text-color2">
+                                    {" "}
+                                    {itemProperties?.ampere} A
+                                </span>
                             </li>
-                            <li className="font-bold text-[16px] text-text-color2 leading=[20px]">
-                                Тип регулятора
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                                {language?.catalog?.regulator_type} -{" "}
+                                <span className="inline-block font-medium text-text-color2">
+                                    {itemProperties?.typeOfRegular}
+                                </span>
                             </li>
                         </ul>
                         <Link
@@ -187,7 +202,7 @@ const CarouselCatalog = ({ language }) => {
                             href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                             className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                         >
-                            Скачать
+                            {language?.catalog?.download}
                         </Link>
                     </div>
                 </div>
