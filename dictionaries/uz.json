@@ -1,7 +1,8 @@
 {
     "toast": {
         "success": "Muvaffaqiyatli yuborildi!",
-        "error": "Xatolik yuz berdi"
+        "error": "Xatolik yuz berdi",
+        "not_found": "Hech narsa topilmadi"
     },
     "header": {
         "catalog": "KATALOG",

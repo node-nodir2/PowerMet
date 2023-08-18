@@ -1,7 +1,8 @@
 {
     "toast": {
         "success": "Успешно!",
-        "error": "Ошибка"
+        "error": "Ошибка",
+        "not_found": "Hичего не найдено"
     },
     "header": {
         "catalog": "КАТАЛОГ",

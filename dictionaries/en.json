@@ -1,7 +1,8 @@
 {
     "toast": {
         "success": "Successfully!",
-        "error": "Error"
+        "error": "Error",
+        "not_found": "No items found"
     },
     "header": {
         "catalog": "CATALOG",

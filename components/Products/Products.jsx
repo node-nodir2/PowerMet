@@ -255,7 +255,7 @@ const Product = ({ language }) => {
                                 ))
                             ) : (
                                 <motion.div {...motionConfig} key={0}>
-                                    <p>No items found 😥</p>
+                                    <p>{language?.toast?.not_found} 😥</p>
                                 </motion.div>
                             )}
                         </AnimatePresence>

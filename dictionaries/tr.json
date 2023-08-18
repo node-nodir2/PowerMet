@@ -1,7 +1,8 @@
 {
     "toast": {
         "success": "Üstünlik!",
-        "error": "Roralňyşlyk"
+        "error": "Roralňyşlyk",
+        "not_found": "Hiç zat tapylmady"
     },
     "header": {
         "catalog": "KATALOG",

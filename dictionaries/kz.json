@@ -1,7 +1,8 @@
 {
     "toast": {
         "success": "Сәтті!",
-        "error": "Қате"
+        "error": "Қате",
+        "not_found": "Ешбір элемент табылмады"
     },
     "header": {
         "catalog": "КАТАЛОГ",
