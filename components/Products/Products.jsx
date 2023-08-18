@@ -212,24 +212,31 @@ const Product = ({ language }) => {
                                         />
                                         <div className="px-[18px] pb-5">
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.typeOfRegular}
+                                                {product?.category?.name}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 Тип топлива{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.governorType}
+                                                    -{" "}
+                                                    {
+                                                        product?.subProduct
+                                                            ?.typeOfOil
+                                                    }
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
                                                 Модель{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.model}
+                                                    -{" "}
+                                                    {product?.subProduct?.model}
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
                                                 Мощность{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.maxPover}
+                                                    -{" "}
+                                                    {product?.subProduct?.pover}{" "}
+                                                    kVa
                                                 </span>
                                             </p>
                                             <button

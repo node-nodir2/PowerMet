@@ -33,6 +33,7 @@ const CarouselCatalog = ({ language }) => {
     useEffect(() => {
         getProducts();
     }, []);
+    console.log(products);
 
     return (
         <div className="bg-white mt-5 sm:mt-[68px]">
@@ -86,24 +87,31 @@ const CarouselCatalog = ({ language }) => {
                                             data-image={product?.image}
                                         >
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.model}
+                                                {product?.category?.name}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 Тип топлива{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.typeOfRegular}
+                                                    -{" "}
+                                                    {
+                                                        product?.subProduct
+                                                            ?.typeOfOil
+                                                    }
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
                                                 Модель{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.model}
+                                                    -{" "}
+                                                    {product?.subProduct?.model}
                                                 </span>
                                             </p>
                                             <p className="font-bold text-[#333] opacity-80">
                                                 Мощность{" "}
                                                 <span className="inline-block font-medium text-[#333] opacity-60">
-                                                    - {product?.maxPover} kVa
+                                                    -{" "}
+                                                    {product?.subProduct?.pover}{" "}
+                                                    kVa
                                                 </span>
                                             </p>
                                             <button
