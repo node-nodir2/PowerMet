@@ -33,7 +33,6 @@ const CarouselCatalog = ({ language }) => {
     useEffect(() => {
         getProducts();
     }, []);
-    console.log(products);
 
     return (
         <div className="bg-white mt-5 sm:mt-[68px]">

@@ -68,7 +68,6 @@ const Product = ({ language }) => {
     useEffect(() => {
         getProducts();
     }, [activeCategory, productPowerMax, productPowerMin]); // eslint-disable-line
-    console.log(itemProperties);
 
     return (
         <section>
@@ -290,37 +289,39 @@ const Product = ({ language }) => {
                         height={195}
                         alt="product-image"
                     />
-                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
+                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[500px] w-full">
                         <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
                             {itemProperties?.category?.name}
                         </h2>
                         <ul className="mt-[30px]">
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.model} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.model}
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                Max.Total Output Power -{" "}
                                 <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.subProduct?.model}
+                                    {itemProperties?.minPover} /{" "}
+                                    {itemProperties?.maxPover} kWm/hp
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.cylinder} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.CylinderArrangement}
                                     (л)
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.ampere} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {" "}
                                     {itemProperties?.ampere} A
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.regulator_type} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.typeOfRegular}

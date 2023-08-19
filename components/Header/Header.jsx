@@ -156,7 +156,7 @@ const Header = ({ language, lang }) => {
                                 </li>
                                 <li>
                                     <Link
-                                        href={"/contact"}
+                                        href={`/${lang}/contact`}
                                         className="font-normal text-base text-white hover:text-[#da291c] transition ease-in-out duration-200 opacity-75"
                                     >
                                         {language?.header?.contact}
@@ -208,7 +208,10 @@ const Header = ({ language, lang }) => {
                             {...motionConfig}
                             className={`flex items-center justify-between !py-[18px]`}
                         >
-                            <Link className="flex items-center" href="/">
+                            <Link
+                                className="flex items-center"
+                                href={`/${lang}`}
+                            >
                                 {bg ? (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
@@ -437,7 +440,7 @@ const Header = ({ language, lang }) => {
                                         href="/"
                                     >
                                         <Image
-                                            className="w-[130px] h-[40px]"
+                                            className="w-[125px] h-[40px]"
                                             src={Logo}
                                             alt="site-logo"
                                         />
