@@ -20,11 +20,15 @@ module.exports = {
             },
             boxShadow: {
                 card_shadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.10)",
+                search_shadow: "0px 0px 8px 5px rgba(0, 0, 0, 0.10)",
             },
             colors: {
                 "link-color": "rgba(255, 255, 255, 0.80)",
                 "text-color": "rgba(51, 51, 51, 0.80)",
                 "text-color2": "rgba(51, 51, 51, 0.60)",
+            },
+            borderRadius: {
+                search_radius: "5px 5px 5px 20px",
             },
         },
     },

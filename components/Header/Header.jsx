@@ -32,10 +32,14 @@ const Header = ({ language, lang }) => {
     const [scrollDown, setScrollDown] = useState(false);
     const [number, setNumber] = useState("");
     const [bg, setBg] = useState(false);
+    const [closeSearchBar, setCloseSearchBar] = useState(true);
 
     const [drop, setDrop] = useState(false);
     const [drop1, setDrop1] = useState(false);
     const [search, setSearch] = useState(false);
+    const [searchWords, setSearchWords] = useState("");
+    const [findedProduct, setFindedProduct] = useState([]);
+    console.log(findedProduct);
 
     const notifySuccess = () => toast.success(language?.toast?.success);
     const notifyError = () => toast.error(language?.toast?.error);
@@ -62,6 +66,15 @@ const Header = ({ language, lang }) => {
                 e.target.reset();
             });
     };
+
+    useEffect(() => {
+        axios
+            .get(`${baseUrl}/product/search?search=${searchWords}`, {
+                headers: { lang: "en" },
+            })
+            .then((res) => setFindedProduct(res?.data?.data?.result?.result))
+            .catch(() => console.log());
+    }, [searchWords]);
 
     useEffect(() => {
         const handleClick = (e) => {
@@ -271,7 +284,7 @@ const Header = ({ language, lang }) => {
                                     </li>
                                 </ul>
                             </nav>
-                            <div className="items-center hidden lg:flex">
+                            <div className="relative items-center hidden lg:flex">
                                 <input
                                     className={`${
                                         search
@@ -279,6 +292,12 @@ const Header = ({ language, lang }) => {
                                             : "hidden"
                                     } ${bg ? "text-[#4F6E7B]" : "text-white"}`}
                                     type="text"
+                                    required
+                                    minLength={1}
+                                    autoComplete="off"
+                                    onChange={(e) =>
+                                        setSearchWords(e.target.value.trim())
+                                    }
                                     placeholder={language?.header?.search}
                                     id="searchWrap"
                                 />
@@ -307,13 +326,48 @@ const Header = ({ language, lang }) => {
                                         {language?.header?.consultation}
                                     </p>
                                 </button>
+                                {searchWords.length > 0 && closeSearchBar ? (
+                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[64px]">
+                                        {findedProduct?.map((item) => (
+                                            <Link
+                                                onClick={() => {
+                                                    setSearchWords("");
+                                                }}
+                                                href={`/${lang}/catalog`}
+                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group "
+                                            >
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.category?.name}
+                                                </p>{" "}
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.minPover} /{" "}
+                                                    {item?.maxPover}
+                                                </p>
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.subProduct?.model}
+                                                </p>{" "}
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.typeOfRegular}
+                                                </p>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                ) : null}
                             </div>
-                            <div className="flex items-center ml-10 space-x-4 lg:hidden">
+                            <div className="relative flex items-center ml-10 space-x-4 lg:hidden">
                                 <div className="relative flex items-center">
                                     <input
+                                        required
+                                        minLength={1}
+                                        autoComplete="off"
                                         id="searchWrap"
                                         type="text"
                                         placeholder={language?.header?.search}
+                                        onChange={(e) =>
+                                            setSearchWords(
+                                                e.target.value.trim()
+                                            )
+                                        }
                                         className={`${
                                             search
                                                 ? "relative max-w-[120px] w-full pl-[43px] pr-[8px] py-[8px] border-[1.5px] outline-none border-white focus:border-[#da291c] rounded-[6px] text-base !bg-transparent"
@@ -419,6 +473,33 @@ const Header = ({ language, lang }) => {
                                         } inline-block w-full border-[1.5px] opacity-50 duration-300`}
                                     ></span>
                                 </button>
+                                {searchWords.length > 0 ? (
+                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[64px]">
+                                        {findedProduct?.map((item) => (
+                                            <Link
+                                                onClick={() => {
+                                                    setSearchWords("");
+                                                }}
+                                                href={`/${lang}/catalog`}
+                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group "
+                                            >
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.category?.name}
+                                                </p>{" "}
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.minPover} /{" "}
+                                                    {item?.maxPover}
+                                                </p>
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.subProduct?.model}
+                                                </p>{" "}
+                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                    {item?.typeOfRegular}
+                                                </p>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                ) : null}
                             </div>
                         </motion.div>
 

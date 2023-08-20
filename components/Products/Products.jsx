@@ -39,10 +39,10 @@ const Product = ({ language }) => {
 
         if (activeCategory)
             url.searchParams.append("categoryId", activeCategory);
+        if (productPowerMin)
+            url.searchParams.append("minPover", productPowerMin);
         if (productPowerMax)
             url.searchParams.append("maxPover", productPowerMax);
-        if (productPowerMax)
-            url.searchParams.append("minPover", productPowerMin);
 
         axios
             .get(url.toString(), {
@@ -289,7 +289,7 @@ const Product = ({ language }) => {
                         height={195}
                         alt="product-image"
                     />
-                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[500px] w-full">
+                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
                         <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
                             {itemProperties?.category?.name}
                         </h2>

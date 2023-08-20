@@ -16,7 +16,7 @@ const Services = () => {
                 },
             })
             .then((res) => setDatas(res.data.data.result))
-            .catch((err) => console.log(err));
+            .catch(console.log());
     }, []);
 
     return (
