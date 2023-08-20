@@ -32,7 +32,7 @@ const Header = ({ language, lang }) => {
     const [scrollDown, setScrollDown] = useState(false);
     const [number, setNumber] = useState("");
     const [bg, setBg] = useState(false);
-    const [closeSearchBar, setCloseSearchBar] = useState(true);
+    const [closeSearchBar] = useState(true);
 
     const [drop, setDrop] = useState(false);
     const [drop1, setDrop1] = useState(false);
@@ -326,7 +326,7 @@ const Header = ({ language, lang }) => {
                                     </p>
                                 </button>
                                 {searchWords.length > 0 && closeSearchBar ? (
-                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
+                                    <div className="absolute w-[340px] md:w-[500px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
                                         {findedProduct?.map((item) => (
                                             <Link
                                                 key={item?._id}
@@ -334,14 +334,14 @@ const Header = ({ language, lang }) => {
                                                     setSearchWords("");
                                                 }}
                                                 href={`/${lang}/catalog`}
-                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group "
+                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group"
                                             >
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.category?.name}
                                                 </p>{" "}
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.minPover} /{" "}
-                                                    {item?.maxPover}
+                                                    {item?.maxPover} kWm/hp
                                                 </p>
                                                 <p className="hidden md:block font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.subProduct?.model}
@@ -370,7 +370,7 @@ const Header = ({ language, lang }) => {
                                         }
                                         className={`${
                                             search
-                                                ? "relative max-w-[120px] w-full pl-[43px] pr-[8px] py-[8px] border-[1.5px] outline-none border-white focus:border-[#da291c] rounded-[6px] text-base !bg-transparent"
+                                                ? "relative max-w-[120px] w-full pl-[35px] pr-[8px] py-[6px] border-[1.5px] outline-none border-white focus:border-[#da291c] rounded-[6px] text-base !bg-transparent"
                                                 : "hidden"
                                         } ${
                                             bg ? "text-[#4F6E7B]" : "text-white"
@@ -380,28 +380,28 @@ const Header = ({ language, lang }) => {
                                         <Image
                                             className={`${
                                                 search
-                                                    ? "absolute ml-[13px]"
+                                                    ? "absolute ml-[9px]"
                                                     : ""
                                             } cursor-pointer block`}
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
-                                            width={22}
-                                            height={22}
+                                            width={19}
+                                            height={19}
                                             alt="search"
                                         />
                                     ) : (
                                         <Image
                                             className={`${
                                                 search
-                                                    ? "absolute ml-[13px]"
+                                                    ? "absolute ml-[9px]"
                                                     : ""
                                             } cursor-pointer block`}
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
-                                            width={22}
-                                            height={22}
+                                            width={19}
+                                            height={19}
                                             alt="search"
                                         />
                                     )}
@@ -474,7 +474,7 @@ const Header = ({ language, lang }) => {
                                     ></span>
                                 </button>
                                 {searchWords.length > 0 ? (
-                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
+                                    <div className="absolute w-[340px] md:w-[500px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
                                         {findedProduct?.map((item) => (
                                             <Link
                                                 key={item?._id}
@@ -482,7 +482,7 @@ const Header = ({ language, lang }) => {
                                                     setSearchWords("");
                                                 }}
                                                 href={`/${lang}/catalog`}
-                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group "
+                                                className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group"
                                             >
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.category?.name}
