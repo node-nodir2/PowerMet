@@ -39,7 +39,6 @@ const Header = ({ language, lang }) => {
     const [search, setSearch] = useState(false);
     const [searchWords, setSearchWords] = useState("");
     const [findedProduct, setFindedProduct] = useState([]);
-    console.log(findedProduct);
 
     const notifySuccess = () => toast.success(language?.toast?.success);
     const notifyError = () => toast.error(language?.toast?.error);
@@ -327,9 +326,10 @@ const Header = ({ language, lang }) => {
                                     </p>
                                 </button>
                                 {searchWords.length > 0 && closeSearchBar ? (
-                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[64px]">
+                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
                                         {findedProduct?.map((item) => (
                                             <Link
+                                                key={item?._id}
                                                 onClick={() => {
                                                     setSearchWords("");
                                                 }}
@@ -343,7 +343,7 @@ const Header = ({ language, lang }) => {
                                                     {item?.minPover} /{" "}
                                                     {item?.maxPover}
                                                 </p>
-                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                <p className="hidden md:block font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.subProduct?.model}
                                                 </p>{" "}
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
@@ -474,9 +474,10 @@ const Header = ({ language, lang }) => {
                                     ></span>
                                 </button>
                                 {searchWords.length > 0 ? (
-                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[64px]">
+                                    <div className="absolute w-fit md:w-[450px] shadow-search_shadow rounded-search_radius max-h-[400px] md:max-h-[500px] h-fit overflow-y-scroll bg-white right-0 top-[50px] sm:top-[64px]">
                                         {findedProduct?.map((item) => (
                                             <Link
+                                                key={item?._id}
                                                 onClick={() => {
                                                     setSearchWords("");
                                                 }}
@@ -490,7 +491,7 @@ const Header = ({ language, lang }) => {
                                                     {item?.minPover} /{" "}
                                                     {item?.maxPover}
                                                 </p>
-                                                <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
+                                                <p className="hidden md:block font-medium text-[14px] text-gray-800 group-hover:text-white">
                                                     {item?.subProduct?.model}
                                                 </p>{" "}
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
