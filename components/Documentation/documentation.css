@@ -1,7 +1,7 @@
 .swiper-button-prev::after {
     content: "";
     position: absolute;
-    width: 45px;
+    width: 45px !important;
     height: 45px;
     right: 15px;
     background-image: url("../../public/Images/prev.svg") !important;
@@ -12,7 +12,7 @@
 .swiper-button-next::after {
     content: "";
     position: absolute;
-    width: 45px;
+    width: 45px !important;
     height: 45px;
     background-image: url("../../public/Images/next.svg") !important;
     background-repeat: no-repeat;
