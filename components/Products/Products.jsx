@@ -302,7 +302,7 @@ const Product = ({ language }) => {
                                 </span>
                             </li>
                             <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                Max.Total Output Power -{" "}
+                                {language?.catalog?.output_power} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.minPover} /{" "}
                                     {itemProperties?.maxPover} kWm/hp

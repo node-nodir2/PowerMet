@@ -8,16 +8,16 @@ import Hero from "@/components/Hero/Hero";
 import Client from "@/components/Clients/Clients";
 
 export default async function Home({ params: { lang } }) {
-  const dictionary = await getDictionary(lang);
+    const dictionary = await getDictionary(lang);
 
-  return (
-    <>
-      <Hero language={dictionary} />
-      <Factory language={dictionary} />
-      <CarouselCatalog language={dictionary} />
-      <Design language={dictionary} />
-      <Client language={dictionary} title={dictionary?.partner?.title} />
-      <Contact language={dictionary} />
-    </>
-  );
+    return (
+        <>
+            <Hero language={dictionary} />
+            <Factory language={dictionary} />
+            <CarouselCatalog language={dictionary} lang={lang} />
+            <Design language={dictionary} />
+            <Client language={dictionary} title={dictionary?.partner?.title} />
+            <Contact language={dictionary} />
+        </>
+    );
 }

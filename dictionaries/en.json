@@ -34,6 +34,7 @@
         "model": "Model",
         "fuel_type": "Fuel type",
         "power": "Power",
+        "output_power": "Max.Total Output Power",
         "in_detail": "In detail",
         "cylinder": "Cylinder volume",
         "ampere": "Ampere",

@@ -34,6 +34,7 @@
         "model": "Model",
         "fuel_type": "Yoqilg'i turi",
         "power": "Kuch",
+        "output_power": "Maksimal umumiy chiqish quvvati",
         "in_detail": "Batafsil",
         "cylinder": "Silindr hajmi",
         "ampere": "Amper",

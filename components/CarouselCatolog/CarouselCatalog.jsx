@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "./catolog.css";
 
-const CarouselCatalog = ({ language }) => {
+const CarouselCatalog = ({ language, lang }) => {
     const [products, setProducts] = useState([]);
     const [itemProperties, setItemProperties] = useState({});
     const [showModal, setShowModal] = useState(false);
@@ -24,7 +24,7 @@ const CarouselCatalog = ({ language }) => {
     const getProducts = () => {
         axios
             .get(`${baseUrl}/product/all`, {
-                headers: { lang: "uz" },
+                headers: { lang: lang },
             })
             .then((res) => setProducts(res?.data?.data?.result.result))
             .catch(console.log);
@@ -163,32 +163,34 @@ const CarouselCatalog = ({ language }) => {
                             {itemProperties?.category?.name}
                         </h2>
                         <ul className="mt-[30px]">
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.model} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.model}
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                {language?.catalog?.output_power} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.subProduct?.model}
+                                    {itemProperties?.minPover} /{" "}
+                                    {itemProperties?.maxPover} kWm/hp
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.cylinder} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.CylinderArrangement}
                                     (л)
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.ampere} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {" "}
                                     {itemProperties?.ampere} A
                                 </span>
                             </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px] whitespace-nowrap">
+                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
                                 {language?.catalog?.regulator_type} -{" "}
                                 <span className="inline-block font-medium text-text-color2">
                                     {itemProperties?.typeOfRegular}

@@ -34,6 +34,7 @@
         "model": "Модели",
         "fuel_type": "Навъи сӯзишворӣ",
         "power": "Қувва",
+        "output_power": "Max.Total қувваи баромад",
         "in_detail": "Ба таври муфассал",
         "cylinder": "Ҳаҷми силиндр",
         "ampere": "Ампер",
