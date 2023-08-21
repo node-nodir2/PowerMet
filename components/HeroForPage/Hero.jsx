@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import "./hero.css";
 
-const Hero = ({ title, text, link, route, bgImage, language }) => {
+const Hero = ({ title, text, link, route, bgImage, language, lang }) => {
     return (
         <section
             className={`${
@@ -23,7 +23,7 @@ const Hero = ({ title, text, link, route, bgImage, language }) => {
                 <div className="hidden sm:flex items-center pt-[6px]">
                     <Link
                         className="font-normal text-[20px] text-link-color"
-                        href={"/"}
+                        href={`/${lang}`}
                     >
                         {language?.hero_catalog?.home} /{" "}
                     </Link>{" "}

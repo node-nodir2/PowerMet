@@ -47,17 +47,19 @@ const Services = () => {
                             width={100}
                         />
                     </div>
-                    <Image
-                        data-aos={`${
-                            data?.row ? "fade-up-right" : "fade-up-left"
-                        }`}
-                        data-aos-duration="500"
-                        className={`hidden sm:block w-full h-[426px] rounded-b-[50px] object-cover lg:ml-5`}
-                        src={`${baseUrl}/public/uploads/${data?.image}`}
-                        alt="service-image"
-                        height={225}
-                        width={100}
-                    />
+                    <figure>
+                        <Image
+                            data-aos={`${
+                                data?.row ? "fade-up-right" : "fade-up-left"
+                            }`}
+                            data-aos-duration="500"
+                            className={`hidden sm:block w-full h-[426px] rounded-b-[50px] object-cover lg:ml-5`}
+                            src={`${baseUrl}/public/uploads/${data?.image}`}
+                            alt="service-image"
+                            height={225}
+                            width={100}
+                        />
+                    </figure>
                 </div>
             ))}
         </section>

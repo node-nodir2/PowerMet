@@ -5,22 +5,23 @@ import Hero from "@/components/HeroForPage/Hero";
 import Font from "@/components/Numbers/Numbers";
 
 const About = async ({ params: { lang } }) => {
-  const dictionary = await getDictionary(lang);
+    const dictionary = await getDictionary(lang);
 
-  return (
-    <>
-      <Hero
-        title={dictionary?.hero_about?.title}
-        text={dictionary?.hero_about?.text}
-        route={dictionary?.hero_about?.link}
-        link
-        bgImage={"about"}
-        language={dictionary}
-      />
-      <Font language={dictionary} />
-      <Documentation language={dictionary} />
-    </>
-  );
+    return (
+        <>
+            <Hero
+                link
+                lang={lang}
+                bgImage={"about"}
+                language={dictionary}
+                text={dictionary?.hero_about?.text}
+                route={dictionary?.hero_about?.link}
+                title={dictionary?.hero_about?.title}
+            />
+            <Font language={dictionary} />
+            <Documentation language={dictionary} />
+        </>
+    );
 };
 
 export default About;

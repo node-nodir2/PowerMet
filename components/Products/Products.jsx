@@ -70,7 +70,7 @@ const Product = ({ language }) => {
     }, [activeCategory, productPowerMax, productPowerMin]); // eslint-disable-line
 
     return (
-        <section>
+        <section id="generators">
             <div className="container">
                 <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center mt-5">
                     {language?.catalog?.title}

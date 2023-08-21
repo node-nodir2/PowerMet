@@ -333,7 +333,7 @@ const Header = ({ language, lang }) => {
                                                 onClick={() => {
                                                     setSearchWords("");
                                                 }}
-                                                href={`/${lang}/catalog`}
+                                                href={`/${lang}/catalog/#generators`}
                                                 className="flex items-center space-x-5 hover:bg-[#da291c] border-b-[1px] px-5 py-[5px] group"
                                             >
                                                 <p className="font-medium text-[14px] text-gray-800 group-hover:text-white">
@@ -386,8 +386,8 @@ const Header = ({ language, lang }) => {
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
-                                            width={19}
-                                            height={19}
+                                            width={22}
+                                            height={22}
                                             alt="search"
                                         />
                                     ) : (
@@ -400,8 +400,8 @@ const Header = ({ language, lang }) => {
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
-                                            width={19}
-                                            height={19}
+                                            width={22}
+                                            height={22}
                                             alt="search"
                                         />
                                     )}
