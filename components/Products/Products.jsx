@@ -50,6 +50,7 @@ const Product = ({ language }) => {
             })
             .then((res) => setProducts(res?.data?.data?.result.result))
             .catch(console.log);
+        console.log(url);
     };
 
     const getAllCategories = () => {
@@ -113,7 +114,7 @@ const Product = ({ language }) => {
                                                 }
                                                 name={data?.name}
                                                 id={data?.name}
-                                                onClick={() =>
+                                                onChange={() =>
                                                     setActiveCategory(
                                                         activeCategory ===
                                                             data?._id
@@ -168,7 +169,7 @@ const Product = ({ language }) => {
                                                 productPowerMax ===
                                                 data?.maxPower
                                             }
-                                            onClick={() => {
+                                            onChange={() => {
                                                 setproductPowerMax(
                                                     productPowerMax ===
                                                         data?.maxPower

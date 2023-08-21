@@ -69,7 +69,7 @@ const Header = ({ language, lang }) => {
     useEffect(() => {
         axios
             .get(`${baseUrl}/product/search?search=${searchWords}`, {
-                headers: { lang: "en" },
+                headers: { lang: lang },
             })
             .then((res) => setFindedProduct(res?.data?.data?.result?.result))
             .catch(() => console.log());

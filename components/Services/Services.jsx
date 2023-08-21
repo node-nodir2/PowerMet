@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 
 import { baseUrl } from "@/data";
 
-const Services = () => {
+const Services = ({ lang }) => {
     const [datas, setDatas] = useState([]);
 
     useEffect(() => {
         axios
             .get(`${baseUrl}/service/all`, {
                 headers: {
-                    lang: "en",
+                    lang: lang,
                 },
             })
             .then((res) => setDatas(res.data.data.result))
@@ -43,23 +43,23 @@ const Services = () => {
                             className="block sm:hidden w-full h-[225px] rounded-b-[26px] mt-5"
                             src={`${baseUrl}/public/uploads/${data?.image}`}
                             alt="service-image"
+                            priority={true}
                             height={225}
                             width={100}
                         />
                     </div>
-                    <figure>
-                        <Image
-                            data-aos={`${
-                                data?.row ? "fade-up-right" : "fade-up-left"
-                            }`}
-                            data-aos-duration="500"
-                            className={`hidden sm:block w-full h-[426px] rounded-b-[50px] object-cover lg:ml-5`}
-                            src={`${baseUrl}/public/uploads/${data?.image}`}
-                            alt="service-image"
-                            height={225}
-                            width={100}
-                        />
-                    </figure>
+                    <Image
+                        data-aos={`${
+                            data?.row ? "fade-up-right" : "fade-up-left"
+                        }`}
+                        data-aos-duration="500"
+                        className={`hidden sm:block w-full h-[426px] rounded-b-[50px] object-cover lg:ml-5`}
+                        src={`${baseUrl}/public/uploads/${data?.image}`}
+                        alt="service-image"
+                        priority={true}
+                        height={225}
+                        width={100}
+                    />
                 </div>
             ))}
         </section>

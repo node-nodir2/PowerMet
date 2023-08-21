@@ -16,7 +16,7 @@ const Service = async ({ params: { lang } }) => {
                 route={dictionary?.hero_service?.link}
                 title={dictionary?.hero_service?.title}
             />
-            <Services />
+            <Services lang={lang} />
         </>
     );
 };
