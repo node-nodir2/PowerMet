@@ -211,6 +211,7 @@ const Product = ({ language }) => {
                                         <Image
                                             className="w-full h-[165px] rounded-md"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
+                                            priority={true}
                                             alt="generator"
                                             width={230}
                                             height={161}
@@ -290,9 +291,10 @@ const Product = ({ language }) => {
                     <Image
                         className="!max-w-[300px] !w-full h-[195px] sm:!mr-10 mt-10 sm:mt-0 object-contain"
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
+                        alt="product-image"
+                        priority={true}
                         width={306}
                         height={195}
-                        alt="product-image"
                     />
                     {itemProperties?.category?.name === "GASOLINE" ||
                     itemProperties?.category?.name === "DIESEL" ? (

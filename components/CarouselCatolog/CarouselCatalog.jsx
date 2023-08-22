@@ -77,6 +77,7 @@ const CarouselCatalog = ({ language, lang }) => {
                                         <Image
                                             className="w-full h-[165px] rounded-md"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
+                                            priority={true}
                                             alt="generator"
                                             width={236}
                                             height={165}
