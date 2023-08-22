@@ -26,7 +26,12 @@ const CarouselCatalog = ({ language, lang }) => {
             .get(`${baseUrl}/product/all`, {
                 headers: { lang: lang },
             })
-            .then((res) => setProducts(res?.data?.data?.result.result))
+            .then((res) =>
+                setProducts([
+                    ...res?.data?.data?.result.result,
+                    ...res?.data?.data?.result2.result,
+                ])
+            )
             .catch(console.log);
     };
 
@@ -72,7 +77,7 @@ const CarouselCatalog = ({ language, lang }) => {
                                 >
                                     <motion.div
                                         {...motionConfig}
-                                        className="max-w-[250px] bg-white rounded-md shadow-card_shadow pt-4"
+                                        className="max-w-[270px] bg-white rounded-md shadow-card_shadow pt-4"
                                     >
                                         <Image
                                             className="w-full h-[165px] rounded-md"
@@ -87,7 +92,13 @@ const CarouselCatalog = ({ language, lang }) => {
                                             data-image={product?.image}
                                         >
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.category?.name}
+                                                {product?.category?.name ===
+                                                    "GASOLINE" ||
+                                                product?.category?.name ===
+                                                    "DIESEL"
+                                                    ? "PORTABLE " +
+                                                      product?.category?.name
+                                                    : product?.category?.name}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 {language?.catalog?.fuel_type}{" "}
@@ -153,60 +164,112 @@ const CarouselCatalog = ({ language, lang }) => {
                         />
                     </button>
                     <Image
-                        className="!max-w-[300px] !w-full h-[195px] sm:!mr-10 mt-10 sm:mt-0"
+                        className="!max-w-[300px] !w-full h-[195px] sm:!mr-10 mt-10 sm:mt-0 object-contain"
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
+                        alt="product-image"
+                        priority={true}
                         width={306}
                         height={195}
-                        alt="product-image"
                     />
-                    <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
-                        <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
-                            {itemProperties?.category?.name}
-                        </h2>
-                        <ul className="mt-[30px]">
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                {language?.catalog?.model} -{" "}
-                                <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.model}
-                                </span>
-                            </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                {language?.catalog?.output_power} -{" "}
-                                <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.minPover} /{" "}
-                                    {itemProperties?.maxPover} kWm/hp
-                                </span>
-                            </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                {language?.catalog?.cylinder} -{" "}
-                                <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.CylinderArrangement}
-                                    (л)
-                                </span>
-                            </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                {language?.catalog?.ampere} -{" "}
-                                <span className="inline-block font-medium text-text-color2">
-                                    {" "}
-                                    {itemProperties?.ampere} A
-                                </span>
-                            </li>
-                            <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
-                                {language?.catalog?.regulator_type} -{" "}
-                                <span className="inline-block font-medium text-text-color2">
-                                    {itemProperties?.typeOfRegular}
-                                </span>
-                            </li>
-                        </ul>
-                        <Link
-                            target="_blank"
-                            download="Nodirbek's resume.pdf"
-                            href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
-                            className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
-                        >
-                            {language?.catalog?.download}
-                        </Link>
-                    </div>
+                    {itemProperties?.category?.name === "GASOLINE" ||
+                    itemProperties?.category?.name === "DIESEL" ? (
+                        <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
+                            <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
+                                PORTABLE {itemProperties?.category?.name}
+                            </h2>
+                            <ul className="mt-[30px]">
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.model} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.model}
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.power_pev} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.minPover} /{" "}
+                                        {itemProperties?.maxPover} Hp/rpm
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.cubic_capacity} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.cubicCapacity} CC
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.max_power} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {" "}
+                                        {itemProperties?.maxPover} kVa
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.frequency} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.frequency} Hz
+                                    </span>
+                                </li>
+                            </ul>
+                            <Link
+                                target="_blank"
+                                download="Nodirbek's resume.pdf"
+                                href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
+                                className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
+                            >
+                                {language?.catalog?.download}
+                            </Link>
+                        </div>
+                    ) : (
+                        <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
+                            <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
+                                {itemProperties?.category?.name}
+                            </h2>
+                            <ul className="mt-[30px]">
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.model} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.model}
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.output_power} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.minPover} /{" "}
+                                        {itemProperties?.maxPover} kWm/hp
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.cylinder} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.CylinderArrangement}
+                                        (л)
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.ampere} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {" "}
+                                        {itemProperties?.ampere} A
+                                    </span>
+                                </li>
+                                <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
+                                    {language?.catalog?.regulator_type} -{" "}
+                                    <span className="inline-block font-medium text-text-color2">
+                                        {itemProperties?.typeOfRegular}
+                                    </span>
+                                </li>
+                            </ul>
+                            <Link
+                                target="_blank"
+                                download="Nodirbek's resume.pdf"
+                                href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
+                                className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
+                            >
+                                {language?.catalog?.download}
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </Modal>
         </div>

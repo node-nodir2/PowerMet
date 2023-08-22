@@ -53,6 +53,10 @@ const Product = ({ language }) => {
                     ...res?.data?.data?.result.result,
                     ...res?.data?.data?.result2.result,
                 ]);
+                console.log(
+                    ...res?.data?.data?.result.result,
+                    ...res?.data?.data?.result2.result
+                );
             })
             .catch(console.log);
     };
@@ -206,7 +210,7 @@ const Product = ({ language }) => {
                                     <motion.div
                                         {...motionConfig}
                                         key={product?._id}
-                                        className="max-w-[250px] bg-white rounded-md shadow-card_shadow cursor-pointer pt-4"
+                                        className="max-w-[270px] bg-white rounded-md shadow-card_shadow cursor-pointer pt-4"
                                     >
                                         <Image
                                             className="w-full h-[165px] rounded-md"
@@ -218,7 +222,13 @@ const Product = ({ language }) => {
                                         />
                                         <div className="px-[18px] pb-5">
                                             <h2 className="font-medium text-[20px] text-black">
-                                                {product?.category?.name}
+                                                {product?.category?.name ===
+                                                    "GASOLINE" ||
+                                                product?.category?.name ===
+                                                    "DIESEL"
+                                                    ? "PORTABLE " +
+                                                      product?.category?.name
+                                                    : product?.category?.name}
                                             </h2>
                                             <p className="font-bold text-[#333] opacity-80 mt-[3px]">
                                                 {language?.catalog?.fuel_type}{" "}
@@ -300,7 +310,7 @@ const Product = ({ language }) => {
                     itemProperties?.category?.name === "DIESEL" ? (
                         <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
                             <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
-                                {itemProperties?.category?.name}
+                                PORTABLE {itemProperties?.category?.name}
                             </h2>
                             <ul className="mt-[30px]">
                                 <li className="font-bold text-[16px] text-gray-500 leading=[20px]">
