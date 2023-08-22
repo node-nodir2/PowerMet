@@ -288,7 +288,7 @@ const Product = ({ language }) => {
                         />
                     </button>
                     <Image
-                        className="!max-w-[300px] !w-full h-[195px] sm:!mr-10 mt-10 sm:mt-0 object-cover"
+                        className="!max-w-[300px] !w-full h-[195px] sm:!mr-10 mt-10 sm:mt-0 object-contain"
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
                         width={306}
                         height={195}
