@@ -57,8 +57,8 @@ const Services = ({ lang }) => {
                         src={`${baseUrl}/public/uploads/${data?.image}`}
                         alt="service-image"
                         priority={true}
-                        height={225}
-                        width={100}
+                        height={500}
+                        width={500}
                     />
                 </div>
             ))}

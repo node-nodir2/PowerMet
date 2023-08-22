@@ -130,7 +130,7 @@ export default function RootLayout({ children, params: { lang } }) {
                                 href="tel:+998980013666"
                                 className="block font-normal text-[30px] text-white text-center leading-8"
                             >
-                                +998 98 001 3666
+                                +998 98 001 3 666
                             </Link>
                         </div>
                         <p className="max-w-[312px] w-full mx-auto text-white text-[16px] opacity-80 text-center">

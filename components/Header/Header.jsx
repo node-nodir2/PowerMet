@@ -163,7 +163,7 @@ const Header = ({ language, lang }) => {
                                         href="tel:+998980013666"
                                         className="font-normal text-base text-white hover:text-[#da291c] transition ease-in-out duration-200 opacity-75 ml-2"
                                     >
-                                        +998 98 001 3666
+                                        +998 98 001 3 666
                                     </Link>
                                 </li>
                                 <li>
@@ -615,7 +615,7 @@ const Header = ({ language, lang }) => {
                                             alt="call-image"
                                         />
                                         <p className="font-medium text-base text-[#333] ml-2 hover:text-[#da291c] transition ease-in-out duration-200">
-                                            +998 98 001 3666
+                                            +998 98 001 3 666
                                         </p>
                                     </Link>
                                 </li>
@@ -676,7 +676,7 @@ const Header = ({ language, lang }) => {
                                         className="block font-normal text-[30px] text-white text-center leading-8"
                                     >
                                         {" "}
-                                        +998 98 001 3666
+                                        +998 98 001 3 666
                                     </Link>
                                 </div>
                                 <p className="max-w-[312px] w-full mx-auto text-white text-[16px] opacity-80 text-center">

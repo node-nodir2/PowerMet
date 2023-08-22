@@ -112,7 +112,7 @@ const Footer = ({ language }) => {
                                 href="tel+998900013666"
                                 className="inline-block font-normal text-base text-white"
                             >
-                                +998 98 001 3666
+                                +998 98 001 3 666
                             </Link>
                         </div>
                     </div>

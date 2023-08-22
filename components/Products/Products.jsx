@@ -48,9 +48,8 @@ const Product = ({ language }) => {
             .get(url.toString(), {
                 headers,
             })
-            .then((res) => setProducts(res?.data?.data?.result.result))
+            .then((res) => setProducts(res))
             .catch(console.log);
-        console.log(url);
     };
 
     const getAllCategories = () => {
