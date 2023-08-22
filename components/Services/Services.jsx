@@ -40,12 +40,12 @@ const Services = ({ lang }) => {
                             {data?.description}
                         </p>
                         <Image
-                            className="block sm:hidden w-full h-[225px] rounded-b-[26px] mt-5"
+                            className="block sm:hidden w-full h-[225px] rounded-b-[26px] mt-5 object-cover"
                             src={`${baseUrl}/public/uploads/${data?.image}`}
                             alt="service-image"
                             priority={true}
-                            height={225}
-                            width={100}
+                            height={1000}
+                            width={1000}
                         />
                     </div>
                     <Image
@@ -57,8 +57,8 @@ const Services = ({ lang }) => {
                         src={`${baseUrl}/public/uploads/${data?.image}`}
                         alt="service-image"
                         priority={true}
-                        height={500}
-                        width={500}
+                        height={1000}
+                        width={1000}
                     />
                 </div>
             ))}

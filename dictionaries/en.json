@@ -39,7 +39,11 @@
         "cylinder": "Cylinder volume",
         "ampere": "Ampere",
         "regulator_type": "Regulator type",
-        "download": "Download"
+        "download": "Download",
+        "frequency": "Frequency",
+        "max_power": "Maximum power",
+        "cubic_capacity": "Cubic capacity",
+        "power_pev": "Power / Pev"
     },
     "design": {
         "title": "Patented design cabin.",

@@ -39,7 +39,11 @@
         "cylinder": "Цилиндр көлөмү",
         "ampere": "Ампер",
         "regulator_type": "Регулятор түрү",
-        "download": "Жүктөп алуу"
+        "download": "Жүктөп алуу",
+        "frequency": "Жыштык",
+        "max_power": "Максималдуу күч",
+        "cubic_capacity": "Kуб сыйымдуулугу",
+        "power_pev": "Күч / Пев"
     },
     "design": {
         "title": "Патенттелген кабина дизайны",

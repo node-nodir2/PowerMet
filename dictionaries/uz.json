@@ -39,7 +39,11 @@
         "cylinder": "Silindr hajmi",
         "ampere": "Amper",
         "regulator_type": "Regulyator turi",
-        "download": "Yuklab olish"
+        "download": "Yuklab olish",
+        "frequency": "Chastotasi",
+        "max_power": "Maksimal quvvat",
+        "cubic_capacity": "Kub hajmi",
+        "power_pev": "Quvvat / Pev"
     },
     "design": {
         "title": "Patentlangan kabina dizayni",

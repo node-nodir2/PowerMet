@@ -39,7 +39,11 @@
         "cylinder": "Объем цилиндра",
         "ampere": "Aмпер",
         "regulator_type": "Тип регулятора",
-        "download": "Скачать"
+        "download": "Скачать",
+        "frequency": "Частота",
+        "max_power": "Максимальная мощность",
+        "cubic_capacity": "Кубатура",
+        "power_pev": "Власть / Пев"
     },
     "design": {
         "title": "Запатентованый дизайн кабины",

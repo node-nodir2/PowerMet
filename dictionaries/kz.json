@@ -39,7 +39,11 @@
         "cylinder": "Цилиндр көлемі",
         "ampere": "Ампер",
         "regulator_type": "Реттегіш түрі",
-        "download": "Жүктеп алу"
+        "download": "Жүктеп алу",
+        "frequency": "Жиілік",
+        "max_power": "Максималды қуат",
+        "cubic_capacity": "Текше сыйымдылығы",
+        "power_pev": "Қуат / Pev"
     },
     "design": {
         "title": "Кабинаның патенттелген дизайны",

@@ -39,7 +39,11 @@
         "cylinder": "Silindriň göwrümi",
         "ampere": "Ampere",
         "regulator_type": "Düzgünleşdiriji görnüş",
-        "download": "Göçürip al"
+        "download": "Göçürip al",
+        "frequency": "Iň ýokary güýç",
+        "max_power": "Максимум қудрат",
+        "cubic_capacity": "Kub kuwwaty",
+        "power_pev": "Kuwwat / Pew"
     },
     "design": {
         "title": "Patentlenen dizaýn kabinasy.",
