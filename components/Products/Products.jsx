@@ -53,10 +53,6 @@ const Product = ({ language }) => {
                     ...res?.data?.data?.result.result,
                     ...res?.data?.data?.result2.result,
                 ]);
-                console.log([
-                    ...res?.data?.data?.result.result,
-                    ...res?.data?.data?.result2.result,
-                ]);
             })
             .catch(console.log);
     };
