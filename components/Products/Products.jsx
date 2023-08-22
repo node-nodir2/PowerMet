@@ -308,7 +308,7 @@ const Product = ({ language }) => {
                     />
                     {itemProperties?.category?.name === "GASOLINE" ||
                     itemProperties?.category?.name === "DIESEL" ? (
-                        <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
+                        <div className="flex flex-col items-center justify-center text-start max-w-[400px] w-full px-10 sm:px-0">
                             <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
                                 PORTABLE {itemProperties?.category?.name}
                             </h2>
@@ -356,7 +356,7 @@ const Product = ({ language }) => {
                             </Link>
                         </div>
                     ) : (
-                        <div className="flex flex-col items-center justify-center text-center sm:text-start max-w-[400px] w-full">
+                        <div className="flex flex-col items-center justify-center text-start max-w-[400px] w-full px-10 sm:px-0">
                             <h2 className="font-bold text-[20px] leading-[30px] text-text-color mt-5 sm:mt-0">
                                 {itemProperties?.category?.name}
                             </h2>
