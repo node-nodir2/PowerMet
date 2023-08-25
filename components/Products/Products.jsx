@@ -131,7 +131,10 @@ const Product = ({ language }) => {
                                                 htmlFor={data?.name}
                                                 className="font-normal text-[#333] text-[16px] opacity-70 cursor-pointer"
                                             >
-                                                {data?.name}
+                                                {data?.name === "GASOLINE" ||
+                                                data?.name === "DIESEL"
+                                                    ? "PORTABLE " + data?.name
+                                                    : data?.name}
                                             </label>
                                         </div>
                                     ))}

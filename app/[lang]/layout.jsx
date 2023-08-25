@@ -15,7 +15,6 @@ import Footer from "@/components/Footer/Footer";
 
 import Call from "@/public/Images/call-fixed.svg";
 import Mark_x from "@/public/Images/x.svg";
-// import Loader from "@/public/Images/loader_io.svg";
 
 import "./globals.css";
 
