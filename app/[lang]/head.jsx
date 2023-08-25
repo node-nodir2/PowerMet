@@ -6,6 +6,7 @@ export default function Head() {
                 content="width=device-width, initial-scale=1.0"
             />
             <title>PowerMet</title>
+            <link rel="icon" type="image/x-icon" href="/public/Images/favicon.ico"></link>
             <meta
                 name="google-site-verification"
                 content="GUApCcOuicBYb0iiuh91zrOtBZdzAoTtteo5aSU4fo8"
