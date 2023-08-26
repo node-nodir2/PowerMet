@@ -13,7 +13,7 @@ const ContactSection = ({ language }) => {
             text: language?.hero_contact?.address,
         },
         { id: "2", text: "+998 98 001 3 666", image: Call },
-        { id: "3", text: "info@company.com", image: Message },
+        { id: "3", text: "powermet.infor@gmail.com", image: Message },
     ];
 
     return (

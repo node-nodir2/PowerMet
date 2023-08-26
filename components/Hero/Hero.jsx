@@ -22,7 +22,7 @@ import "swiper/css/pagination";
 
 import "./hero.css";
 
-const Hero = ({ language }) => {
+const Hero = ({ language, lang }) => {
     const [showContact, setShowContact] = useState(false);
     const [hide, setHide] = useState(false);
     const [number, setNumber] = useState("");
@@ -111,13 +111,12 @@ const Hero = ({ language }) => {
                         <p className="font-normal text-[18px] md:text-[24px] text-white opacity-80 mt-[10px] md:mt-[16px]">
                             {language?.hero?.text}
                         </p>
-                        <button
-                            type="button"
-                            onClick={() => setShowContact(true)}
-                            className="flex items-center w-fit text-white text-[18px] bg-[#da291c] rounded-[8px] px-[30px] py-[15px] mt-[32px]"
+                        <Link
+                            href={`/${lang}/catalog`}
+                            className="flex items-center w-fit text-white text-[18px] bg-[#da291c] rounded-[8px] px-[50px] py-[15px] mt-[32px]"
                         >
-                            {language?.header?.consultation}
-                        </button>
+                            {language?.hero?.link}
+                        </Link>
                     </div>
                 </div>
             </Swiper>

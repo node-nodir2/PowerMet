@@ -1,5 +1,5 @@
 export const baseUrl = "https://nanopro.uz";
-export const google_analytics = "G-9H3SFCMLQ0";
+export const google_analytics = "G-BNP9RQVHMX";
 
 export const motionConfig = {
     layout: true,

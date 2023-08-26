@@ -12,7 +12,7 @@ export default async function Home({ params: { lang } }) {
 
     return (
         <>
-            <Hero language={dictionary} />
+            <Hero language={dictionary} lang={lang} />
             <Factory language={dictionary} />
             <CarouselCatalog language={dictionary} lang={lang} />
             <Design language={dictionary} />

@@ -37,7 +37,7 @@ const Location = ({ language }) => {
             <div className="flex flex-col sm:flex-row items-center justify-between sm:space-x-10 space-y-4 sm:space-y-0 pb-[68px]">
                 <iframe
                     className="sm:max-w-[658px] w-full h-[438px] sm:h-[462px] rounded-[10px] border"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.875255329319!2d69.34865828342976!3d41.32849897948923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4431777da7b%3A0x289db26806f061e!2z0JzQuNGA0LfQvi3Qo9C70YPQs9Cx0LXQutGB0LrQuNC5INGA0LDQudC-0L0sINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1689498949606!5m2!1sru!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4156.354701301804!2d69.27553451997714!3d41.29789867466423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad04ad60097%3A0x52c7587959cc49d1!2zMzQg0YPQu9C40YbQsCDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwg0KLQsNGI0LrQtdC90YIgMTAwMDYwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1693080053578!5m2!1sru!2s"
                     width="658"
                     height="438"
                     allowfullscreen=""
