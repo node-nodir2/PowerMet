@@ -1,3 +1,5 @@
+import { google_analytics } from "@/data";
+
 export default function Head() {
     return (
         <head>
@@ -6,7 +8,7 @@ export default function Head() {
                 content="width=device-width, initial-scale=1.0"
             />
             <title>PowerMet</title>
-            <link rel="icon" type="image/x-icon" href="/public/Images/favicon.ico"></link>
+            <link rel="icon" type="image/x-icon" href="./favicon.ico" />
             <meta
                 name="google-site-verification"
                 content="GUApCcOuicBYb0iiuh91zrOtBZdzAoTtteo5aSU4fo8"
@@ -37,6 +39,22 @@ export default function Head() {
                 itemProp="description"
                 name="description"
                 content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
+            />
+            <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics}`}
+            ></script>
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${google_analytics}', {
+              page_path: window.location.pathname,
+            });
+          `,
+                }}
             />
         </head>
     );

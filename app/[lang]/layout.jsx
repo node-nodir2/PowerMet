@@ -138,6 +138,9 @@ export default function RootLayout({ children, params: { lang } }) {
                     </div>
                 </Modal>
             </body>
+            <script>
+                
+            </script>
         </html>
     );
 }
