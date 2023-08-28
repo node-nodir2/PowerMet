@@ -1,4 +1,4 @@
-import { google_analytics } from "@/data";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 export default function Head() {
     return (
@@ -40,10 +40,7 @@ export default function Head() {
                 name="description"
                 content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
             />
-            <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${google_analytics}`}
-            />
+            <GoogleAnalytics measurementId="G-BNP9RQVHMX" />
         </head>
     );
 }
