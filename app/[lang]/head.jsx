@@ -41,6 +41,7 @@ export default function Head() {
                 content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
             />
             <GoogleAnalytics measurementId="G-BNP9RQVHMX" />
+            <meta name="google-site-verification" content="UKmqey8Eiy9USFTyTAzQPBXcFD8M-_yk9b_9uPgvN_I" />
         </head>
     );
 }
