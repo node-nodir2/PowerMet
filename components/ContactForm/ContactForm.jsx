@@ -44,10 +44,11 @@ const ContactForm = ({ language, modal, closeModal }) => {
                         className="absolute top-[20px] right-[25px] w-[30px] h-[30px]"
                     >
                         <Image
-                            src={Mark_x}
                             width={30}
                             height={30}
                             alt="close"
+                            src={Mark_x}
+                            priority={true}
                         />
                     </button>
                 ) : null}
@@ -81,7 +82,6 @@ const ContactForm = ({ language, modal, closeModal }) => {
                         href="tel:+998980013666"
                         className="block font-normal text-[30px] text-white text-center leading-8"
                     >
-                        {" "}
                         +998 98 001 3 666
                     </Link>
                 </div>
