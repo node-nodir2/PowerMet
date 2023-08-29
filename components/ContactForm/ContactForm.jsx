@@ -36,7 +36,7 @@ const ContactForm = ({ language, modal, closeModal }) => {
 
     return (
         <>
-            <div className="max-w-[590px] w-full py-[30px] px-[45px] bg-[#da291c] rounded-[10px]">
+            <div className="max-w-[590px] w-full pt-[50px] pb-[30px] px-[45px] bg-[#da291c] rounded-[10px]">
                 {modal ? (
                     <button
                         type="button"
