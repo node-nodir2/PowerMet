@@ -310,7 +310,7 @@ const Product = ({ language }) => {
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
                         alt="product-image"
                         priority={true}
-                        width={306}
+                        width={300}
                         height={195}
                     />
                     {itemProperties?.category?.name === "GASOLINE" ||

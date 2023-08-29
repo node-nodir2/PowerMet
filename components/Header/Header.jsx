@@ -212,6 +212,8 @@ const Header = ({ language, lang }) => {
                                 {bg ? (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
+                                        width={170}
+                                        height={50}
                                         src={Logo}
                                         alt="site-logo"
                                         priority={true}
@@ -219,6 +221,8 @@ const Header = ({ language, lang }) => {
                                 ) : (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
+                                        width={170}
+                                        height={50}
                                         src={Logo_white}
                                         alt="site-logo"
                                         priority={true}
@@ -226,6 +230,8 @@ const Header = ({ language, lang }) => {
                                 )}
                                 <Image
                                     className="block md:hidden w-[45px] h-[40px]"
+                                    width={45}
+                                    height={40}
                                     src={Logo_P}
                                     alt="site-logo"
                                     priority={true}
