@@ -54,8 +54,9 @@ const Client = ({ title }) => {
                     {datas?.map((data) => (
                         <Image
                             className="cursor-pointer w-auto h-auto"
-                            key={data?.id}
                             src={data?.image}
+                            priority={true}
+                            key={data?.id}
                             alt="generator"
                         />
                     ))}

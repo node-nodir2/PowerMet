@@ -49,6 +49,7 @@ const Design = ({ language }) => {
                             className="w-auto h-full rounded-md"
                             src={Generator}
                             alt="generator"
+                            priority={true}
                         />
                     </SwiperSlide>
                     <SwiperSlide className="!flex !justify-center cursor-pointer">
@@ -56,6 +57,7 @@ const Design = ({ language }) => {
                             className="w-auto h-full rounded-md"
                             src={Generator2}
                             alt="generator"
+                            priority={true}
                         />
                     </SwiperSlide>
                 </Swiper>

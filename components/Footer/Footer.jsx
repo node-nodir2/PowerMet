@@ -126,6 +126,7 @@ const Footer = ({ language }) => {
                             className="flex flex-col space-y-5 mt-[15px]"
                         >
                             <input
+                                required
                                 type="text"
                                 onChange={(e) =>
                                     setNumber(e.target.value.trim())

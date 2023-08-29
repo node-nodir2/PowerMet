@@ -28,6 +28,7 @@ const ContactSection = ({ language }) => {
                             <Image
                                 className="w-auto h-10"
                                 src={data?.image}
+                                priority={true}
                                 alt="contact-image"
                             />
                         </div>
