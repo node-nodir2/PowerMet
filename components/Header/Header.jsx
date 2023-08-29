@@ -23,7 +23,15 @@ import Search from "../../public/Images/search.svg";
 import Search_Black from "../../public/Images/search_black.svg";
 import SideBar from "../SideBar/SideBar";
 
-const languages = ["uz", "ru", "en", "tr", "tj", "kz", "kg"];
+const languages = [
+    { id: 0, lang: "uz" },
+    { id: 1, lang: "ru" },
+    { id: 2, lang: "en" },
+    { id: 3, lang: "tr" },
+    { id: 4, lang: "tj" },
+    { id: 5, lang: "kz" },
+    { id: 6, lang: "kg" },
+];
 
 const Header = ({ language, lang }) => {
     const pathName = usePathname();
@@ -404,15 +412,15 @@ const Header = ({ language, lang }) => {
                                     />
                                     {drop1 ? (
                                         <ul className="absolute z-50 -left-[24px] top-[43px] lg:top-[47px] w-[80px] bg-gray-100 rounded-lg duration-500 !text-center">
-                                            {languages.map((lan, index) => (
+                                            {languages.map((data) => (
                                                 <Link
-                                                    key={index}
+                                                    key={data?.id}
                                                     href={redirectedPathName(
-                                                        lan
+                                                        data?.lang
                                                     )}
                                                     className="flex font-medium items-center justify-center text-sm hover:bg-[#da291c] text-[#454545] hover:text-white duration-300 py-1 px-3 rounded-lg"
                                                 >
-                                                    {lan}
+                                                    {data?.lang}
                                                 </Link>
                                             ))}
                                         </ul>
