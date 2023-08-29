@@ -153,6 +153,7 @@ const Header = ({ language, lang }) => {
                             {/* ------ Dropdown ------ */}
                             <Image
                                 src={Planet_White}
+                                priority={true}
                                 width={20}
                                 height={20}
                                 alt="Picture of the author"
@@ -170,6 +171,7 @@ const Header = ({ language, lang }) => {
                                         drop ? "-rotate-180" : ""
                                     }`}
                                     src={Vector}
+                                    priority={true}
                                     width={10}
                                     height={6}
                                     alt="Picture of the author"
@@ -203,18 +205,21 @@ const Header = ({ language, lang }) => {
                                         className="hidden md:block w-[170px] h-[50px]"
                                         src={Logo}
                                         alt="site-logo"
+                                        priority={true}
                                     />
                                 ) : (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
                                         src={Logo_white}
                                         alt="site-logo"
+                                        priority={true}
                                     />
                                 )}
                                 <Image
                                     className="block md:hidden w-[45px] h-[40px]"
                                     src={Logo_P}
                                     alt="site-logo"
+                                    priority={true}
                                 />
                             </Link>
                             <nav className="hidden lg:block">
@@ -281,6 +286,7 @@ const Header = ({ language, lang }) => {
                                     onClick={() => setSearch(true)}
                                     id="searchWrap"
                                     src={bg ? Search_Black : Search}
+                                    priority={true}
                                     width={22}
                                     height={22}
                                     alt="search"
@@ -294,6 +300,7 @@ const Header = ({ language, lang }) => {
                                         width={20}
                                         height={20}
                                         alt="call-image"
+                                        priority={true}
                                     />
                                     <p className="font-medium text-white text-base tracking-[0.12px] ml-[6px]">
                                         {language?.header?.consultation}
@@ -360,6 +367,7 @@ const Header = ({ language, lang }) => {
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
+                                            priority={true}
                                             width={22}
                                             height={22}
                                             alt="search"
@@ -374,6 +382,7 @@ const Header = ({ language, lang }) => {
                                             onClick={() => setSearch(true)}
                                             id="searchWrap"
                                             src={bg ? Search_Black : Search}
+                                            priority={true}
                                             width={22}
                                             height={22}
                                             alt="search"

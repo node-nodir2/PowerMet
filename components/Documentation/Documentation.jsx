@@ -144,6 +144,7 @@ const Documentation = ({ language }) => {
                                 <Image
                                     className="w-full h-[250px] rounded-md"
                                     src={data?.image}
+                                    priority={true}
                                     alt="Sertificait"
                                 />
                             </div>

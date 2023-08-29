@@ -10,7 +10,7 @@ import { baseUrl } from "@/data";
 import Logo from "../../public/Images/logoWhite.png";
 import Arrow from "../../public/Images/arrow-up.svg";
 
-const Footer = ({ language }) => {
+const Footer = ({ language, lang }) => {
     const [number, setNumber] = useState("");
 
     const notifySuccess = () => toast.success(language?.toast?.success);
@@ -41,10 +41,11 @@ const Footer = ({ language }) => {
             <div className="container flex !items-end !pb-[35px] border-b-[0.7px] border-[#474747]">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-start space-y-5 sm:space-y-0">
                     <div className="flex items-center justify-between">
-                        <Link className="flex items-center" href="/">
+                        <Link className="flex items-center" href={`/${lang}`}>
                             <Image
                                 className="w-[170px] sm:w-[220px] h-[50px] sm:h-[60px]"
                                 src={Logo}
+                                priority={true}
                                 alt="site-logo"
                             />
                         </Link>
@@ -55,32 +56,32 @@ const Footer = ({ language }) => {
                         </p>
                         <ul className="space-y-[6px] mt-[15px]">
                             <li className="font-normal text-base text-white">
-                                <Link href={"/catalog"}>
+                                <Link href={`/${lang}/catalog`}>
                                     {language?.footer?.catalog}
                                 </Link>
                             </li>
                             <li className="font-normal text-base text-white">
-                                <Link href={"/service"}>
+                                <Link href={`/${lang}/service`}>
                                     {language?.footer?.service}
                                 </Link>
                             </li>
                             <li className="font-normal text-base text-white">
-                                <Link href={"/about"}>
+                                <Link href={`/${lang}/about`}>
                                     {language?.footer?.about}
                                 </Link>
                             </li>
                             <li className="font-normal text-base text-white">
-                                <Link href={"/contact"}>
+                                <Link href={`/${lang}/contact`}>
                                     {language?.footer?.submit}
                                 </Link>
                             </li>
                             <li className="font-normal text-base text-white">
-                                <Link href={"/partner"}>
+                                <Link href={`/${lang}/partner`}>
                                     {language?.footer?.partner}
                                 </Link>
                             </li>
                             <li className="font-normal text-base text-white">
-                                <Link href={"/contact"}>
+                                <Link href={`/${lang}/contact`}>
                                     {language?.footer?.contact}
                                 </Link>
                             </li>
@@ -96,8 +97,7 @@ const Footer = ({ language }) => {
                             </p>
                             <address className="not-italic inline-block font-normal text-base text-white">
                                 {language?.footer?.address_text} <br />{" "}
-                                34.Tashkent,
-                                <Link href={"/"}></Link>Mirabad Uzbekistan
+                                34.Tashkent, Mirabad Uzbekistan
                             </address>
                             <p className="font-bold text-base text-white">
                                 {language?.footer?.mail}
@@ -147,7 +147,13 @@ const Footer = ({ language }) => {
                     className="flex items-center justify-center w-[60px] h-[50px] bg-[#313131] rounded-lg ml-[35px] sm:mb-[35px]"
                     href={`#`}
                 >
-                    <Image src={Arrow} width={21} height={12} alt="arrow-up" />
+                    <Image
+                        priority={true}
+                        src={Arrow}
+                        width={21}
+                        height={12}
+                        alt="arrow-up"
+                    />
                 </Link>
             </div>
             <p className="container sm:!p-0 font-normal text-[12px] text-[#D9DBE1] !mt-[18px]">

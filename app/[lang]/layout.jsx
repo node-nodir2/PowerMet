@@ -35,7 +35,7 @@ export default function RootLayout({ children, params: { lang } }) {
                 <Toaster />
                 <Header language={language} lang={lang} />
                 {children}
-                <Footer language={language} />
+                <Footer language={language} lang={lang} />
                 <Link
                     onClick={() => {
                         setShowContact(true);

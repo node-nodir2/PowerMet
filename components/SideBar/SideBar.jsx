@@ -12,9 +12,9 @@ const SideBar = ({ lang, language, setShowModal, showModal }) => {
                     onClick={setShowModal}
                     className="flex items-center justify-between"
                 >
-                    <Link className="flex items-center" href="/">
+                    <Link className="flex items-center" href={`/${lang}`}>
                         <Image
-                            className="w-[125px] h-[40px]"
+                            className="w-[135px] h-[40px]"
                             src={Logo}
                             alt="site-logo"
                         />

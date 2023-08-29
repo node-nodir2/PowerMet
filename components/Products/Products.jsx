@@ -1,11 +1,11 @@
 "use client";
+import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import axios from "axios";
-
 import { baseUrl, motionConfig } from "@/data";
+import { AnimatePresence, motion } from "framer-motion";
+
 import Modal from "../Modal/Modal";
 
 import Up from "@/public/Images/chevron-right.svg";
@@ -92,6 +92,7 @@ const Product = ({ language }) => {
                                 className={`${
                                     drop ? "rotate-180" : "rotate-0"
                                 } duration-300`}
+                                priority={true}
                                 src={Up}
                                 width={20}
                                 height={20}
@@ -151,6 +152,7 @@ const Product = ({ language }) => {
                                     drop1 ? "rotate-180" : "rotate-0"
                                 } duration-300`}
                                 src={Up}
+                                priority={true}
                                 width={20}
                                 height={20}
                                 alt="arrow"
@@ -269,7 +271,9 @@ const Product = ({ language }) => {
                                 ))
                             ) : (
                                 <motion.div {...motionConfig} key={0}>
-                                    <p>{language?.toast?.not_found} 😥</p>
+                                    <p className="font-normal text-base sm:text-xl text-gray-700">
+                                        {language?.toast?.not_found} 😥
+                                    </p>
                                 </motion.div>
                             )}
                         </AnimatePresence>
@@ -291,6 +295,7 @@ const Product = ({ language }) => {
                         className="absolute top-[20px] right-[25px] w-[30px] h-[30px]"
                     >
                         <Image
+                            priority={true}
                             src={Mark_x}
                             width={30}
                             height={30}

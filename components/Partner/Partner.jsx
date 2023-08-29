@@ -62,6 +62,7 @@ const Partner = ({ language }) => {
                         <Image
                             className="block lg:hidden max-w-[430px] w-full h-[248px] mx-auto rounded-b-[26px] mt-5 object-cover"
                             src={PartnerImgMobile}
+                            priority={true}
                             alt="service-image"
                         />
                         <div className="flex items-center space-x-[6px] mt-5">
@@ -80,6 +81,7 @@ const Partner = ({ language }) => {
                     <Image
                         className="hidden lg:block w-full h-[352px] ml-16 rounded-[26px] object-cover"
                         src={PartnerImg}
+                        priority={true}
                         alt="service-image"
                     />
                 </div>
