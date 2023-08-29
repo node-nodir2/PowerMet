@@ -404,9 +404,9 @@ const Header = ({ language, lang }) => {
                                     />
                                     {drop1 ? (
                                         <ul className="absolute z-50 -left-[24px] top-[43px] lg:top-[47px] w-[80px] bg-gray-100 rounded-lg duration-500 !text-center">
-                                            {languages.map((lan) => (
+                                            {languages.map((lan, index) => (
                                                 <Link
-                                                    key={lan}
+                                                    key={index}
                                                     href={redirectedPathName(
                                                         lan
                                                     )}
