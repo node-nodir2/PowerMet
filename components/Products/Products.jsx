@@ -217,11 +217,11 @@ const Product = ({ language }) => {
                                         className="max-w-[270px] bg-white rounded-md shadow-card_shadow cursor-pointer pt-4"
                                     >
                                         <Image
-                                            className="w-full h-[165px] rounded-md"
+                                            className="max-w-[236px] w-full h-[165px] rounded-md"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
                                             priority={true}
                                             alt="generator"
-                                            width={230}
+                                            width={236}
                                             height={161}
                                         />
                                         <div className="px-[18px] pb-5">
