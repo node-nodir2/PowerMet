@@ -63,6 +63,7 @@ const ContactForm = ({ language, modal, closeModal }) => {
                     <input
                         type="text"
                         required
+                        aria-label={language?.header?.modal?.placeholder}
                         placeholder={language?.header?.modal?.placeholder}
                         onChange={(e) => setNumber(e.target.value.trim())}
                         className="w-full h-[45px] sm:h-[54px] font-normal border-[1.5px] border-white bg-input-bg-contact rounded-lg outline-none text-[16px] text-white placeholder-white px-[25px]"
@@ -81,6 +82,7 @@ const ContactForm = ({ language, modal, closeModal }) => {
                     <Link
                         href="tel:+998980013666"
                         className="block font-normal text-[30px] text-white text-center leading-8"
+                        aria-label="To fill form of consultation"
                     >
                         +998 98 001 3 666
                     </Link>

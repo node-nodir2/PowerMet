@@ -144,6 +144,7 @@ const Header = ({ language, lang }) => {
                                     <Link
                                         href="tel:+998980013666"
                                         className="font-normal text-base text-white hover:text-[#da291c] transition ease-in-out duration-200 opacity-75 ml-2"
+                                        aria-label="Company's phone number"
                                     >
                                         +998 98 001 3 666
                                     </Link>
@@ -284,6 +285,7 @@ const Header = ({ language, lang }) => {
                                     onChange={(e) =>
                                         setSearchWords(e.target.value.trim())
                                     }
+                                    aria-label={language?.header?.search}
                                     placeholder={language?.header?.search}
                                     id="searchWrap"
                                 />
@@ -351,6 +353,7 @@ const Header = ({ language, lang }) => {
                                         autoComplete="off"
                                         id="searchWrap"
                                         type="text"
+                                        aria-label={language?.header?.search}
                                         placeholder={language?.header?.search}
                                         onChange={(e) =>
                                             setSearchWords(

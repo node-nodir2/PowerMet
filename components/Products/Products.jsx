@@ -114,10 +114,12 @@ const Product = ({ language }) => {
                                             <input
                                                 className="categories_checkbox w-[22px] h-[22px] rounded-[3px] cursor-pointer accent-pink-500"
                                                 type="checkbox"
+                                                aria-label="select categor"
                                                 checked={
                                                     activeCategory === data?._id
                                                 }
                                                 name={data?.name}
+                                                y
                                                 id={data?.name}
                                                 onChange={() =>
                                                     setActiveCategory(
@@ -171,6 +173,7 @@ const Product = ({ language }) => {
                                     >
                                         <input
                                             className="categories_checkbox w-[22px] h-[22px] rounded-[3px] cursor-pointer accent-pink-500"
+                                            aria-label="select power of product"
                                             type="checkbox"
                                             name={data?.kb}
                                             id={data?.kb}

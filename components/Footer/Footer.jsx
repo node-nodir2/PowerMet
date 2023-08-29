@@ -111,6 +111,7 @@ const Footer = ({ language, lang }) => {
                             <Link
                                 href="tel+998900013666"
                                 className="inline-block font-normal text-base text-white"
+                                aria-label="Company's phone number"
                             >
                                 +998 98 001 3 666
                             </Link>
@@ -131,6 +132,7 @@ const Footer = ({ language, lang }) => {
                                 onChange={(e) =>
                                     setNumber(e.target.value.trim())
                                 }
+                                aria-label={language?.footer?.placeholder}
                                 placeholder={language?.footer?.placeholder}
                                 className="w-full h-[50px] rounded-[8px] outline-none border border-white bg-input-bg-footer text-white placeholder-white px-3"
                             />
