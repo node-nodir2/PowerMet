@@ -103,5 +103,10 @@
         "title": "BIZGA 24/7 BOG'LANISH UCHUN HAMMA YO'LLARI",
         "text": "Biz mijozlarimizga 24/7 yordam beramiz",
         "address": "Taras Shevchenko ko'chasi 34. Toshkent, Mirobod O'zbekiston"
+    },
+    "numbers": {
+        "text_1": "Bizning kampaniyamiz 140 dan ortiq sanoat dizel generatorlarini import qiladi",
+        "text_2": "Bizning aksiyamiz 8 dan ortiq brendlar - sanoat dizel generatorlari ishlab chiqaruvchilari bilan hamkorlik qiladi",
+        "text_3": "Kompaniyamiz 10 yildan ortiq vaqtdan beri sanoat dizel generatorlarini import qiladi va o'rnatadi"
     }
 }

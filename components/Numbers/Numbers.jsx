@@ -2,18 +2,18 @@ const Numbers = ({ language }) => {
     const datas = [
         {
             id: 0,
-            title: "5000",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.",
+            title: "140+",
+            text: language?.numbers?.text_1,
         },
         {
             id: 1,
-            title: "14",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.",
+            title: "8+",
+            text: language?.numbers?.text_2,
         },
         {
             id: 2,
-            title: "99",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.",
+            title: "10+",
+            text: language?.numbers?.text_3,
         },
     ];
 
@@ -23,7 +23,7 @@ const Numbers = ({ language }) => {
                 <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center">
                     {language?.hero_about?.numbers}
                 </h2>
-                <ul className="flex flex-col sm:flex-row items-center justify-between mt-5">
+                <ul className="flex flex-col sm:flex-row items-start justify-between mt-5">
                     {datas?.map((data) => (
                         <li key={data?.id} className="max-w-[338px] w-full">
                             <h3 className="font-bold text-[100px] text-[#da291c] text-center leading-[105px] sm:leading-normal">

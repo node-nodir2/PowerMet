@@ -19,10 +19,10 @@ export default function Head() {
                 name="keywords"
                 content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
             />
-            <meta property="og:site_name" content="PowerMet" />
+            <meta property="og:site_name" content="Generator" />
             <meta
                 property="og:title"
-                content="PowerMet - POWERFUL INDUSTRIAL DIESEL GENERATORS"
+                content="Generator - POWERFUL INDUSTRIAL DIESEL GENERATORS"
             />
             <meta property="og:url" content="https://generatoruz.com/" />
             <meta property="og:type" content="website" />
@@ -33,12 +33,12 @@ export default function Head() {
             <meta property="og:image" content="/public/Images/LogoBlack.png" />
             <meta property="og:image:width" content="500" />
             <meta property="og:image:height" content="500" />
-            <meta itemProp="name" content="PowerMet" />
+            <meta itemProp="name" content="Generator" />
             <meta itemProp="url" content="https://generatoruz.com/" />
             <meta
                 itemProp="description"
                 name="description"
-                content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
+                content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly."
             />
             <GoogleAnalytics measurementId="G-BNP9RQVHMX" />
             <meta name="google-site-verification" content="UKmqey8Eiy9USFTyTAzQPBXcFD8M-_yk9b_9uPgvN_I" />

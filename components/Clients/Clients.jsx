@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
 
 import Partner1 from "@/public/Images/partner1.png";
 import Partner2 from "@/public/Images/partner2.png";
@@ -13,6 +13,18 @@ import Partner9 from "@/public/Images/partner9.png";
 import Partner10 from "@/public/Images/partner10.png";
 import Partner11 from "@/public/Images/partner11.png";
 import Partner12 from "@/public/Images/partner12.png";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+// import required modules
+import { Navigation, Autoplay } from "swiper/modules";
 
 const datas = [
     { id: 1, image: Partner1 },
@@ -49,19 +61,41 @@ const Client = ({ title }) => {
                     {title}
                 </h2>
             ) : null}
-            <Marquee speed={60} pauseOnClick={true} className="!z-0">
-                <div className="flex items-center space-x-[50px] h-[82px] sm:h-[102px] overflow-y-hidden">
-                    {datas?.map((data) => (
+            <Swiper
+                spaceBetween={50}
+                loop={true}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                    },
+                }}
+                navigation={true}
+                pagination={false}
+                modules={[Navigation, Autoplay]}
+                className="mySwiper h-[62px] sm:h-[102px]"
+            >
+                {datas?.map((data) => (
+                    <SwiperSlide className="!flex !items-center !w-fit">
                         <Image
-                            className="cursor-pointer w-auto h-auto"
+                            className="cursor-pointer w-auto h-[60px] sm:h-auto"
                             src={data?.image}
                             priority={true}
                             key={data?.id}
                             alt="generator"
                         />
-                    ))}
-                </div>
-            </Marquee>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </section>
     );
 };
