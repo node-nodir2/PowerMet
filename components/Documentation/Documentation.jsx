@@ -116,7 +116,7 @@ const Documentation = ({ language }) => {
                     spaceBetween={30}
                     slidesPerView={4}
                     autoplay={{
-                        delay: 12000,
+                        delay: 3000,
                         disableOnInteraction: false,
                     }}
                     navigation={true}
