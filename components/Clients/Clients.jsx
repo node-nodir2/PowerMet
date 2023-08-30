@@ -85,7 +85,10 @@ const Client = ({ title }) => {
                 className="mySwiper h-[62px] sm:h-[102px]"
             >
                 {datas?.map((data) => (
-                    <SwiperSlide className="!flex !items-center !w-fit">
+                    <SwiperSlide
+                        key={data?.id}
+                        className="!flex !items-center !w-fit"
+                    >
                         <Image
                             className="cursor-pointer w-auto h-[60px] sm:h-auto"
                             src={data?.image}
