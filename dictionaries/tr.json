@@ -85,7 +85,13 @@
         "title": "Biz hakda",
         "text": "Mahabatymyz, islendik assortimentiň generatorlaryny satmak we oturtmak ýaly hyzmatlary hödürleýär.",
         "documentation": "Resminamalar",
-        "numbers": "Sanlar"
+        "numbers": {
+            "title": "Kompaniýamyz hakda",
+            "sub_text": "P POWER MET INTERNATIONAL LLC senagat generatorlaryna hyzmat etmekde we import etmekde iň gowy hyzmatdaşyňyzdyr. Biziň kompaniýamyz, 10 ýyldan gowrak wagt bäri ähli öňdebaryjy markalara hyzmat etmekde we goldamakda ýöriteleşendir. Generator öndürijileriniň 8-den gowrak markasy bilen hyzmatdaşlyk edip, üstünlikli import edýän 140-dan gowrak generator modelini hödürleýändigimize buýsanýarys. Energiýa zerurlyklaryňyz üçin hil we ygtybarly çözgütler işiňizi yzygiderli dowam etdirer. Tejribeli we hünärmen işgärlerimiz ýokary hilli hyzmaty we gyssagly eltmegi kepillendirýärler. Aladalaryňyzy egnimize salyň we generator çözgütlerimiziň ygtybarlylygyndan we netijeliliginden lezzet alyň. Bize ynanyň we tapawudyny duýuň - üstünlikiňiz biziň aladamyz!",
+            "text_1": "Kampaniýamyz, dizel generatorlarynyň 140-dan gowrak modelini import edýär",
+            "text_2": "Kampaniýamyz, 8-den gowrak marka - senagat dizel generatorlaryny öndürijiler bilen hyzmatdaşlyk edýär",
+            "text_3": "Biziň kompaniýamyz 10 ýyldan gowrak wagt bäri senagat dizel generatorlaryny import edýär we oturtýar"
+        }
     },
     "hero_partner": {
         "link": "Hyzmatdaşlarymyz",
@@ -103,10 +109,5 @@
         "title": "ABŞ bilen 24/7 habarlaşmagyň ähli ýollary",
         "text": "Müşderilerimize 24/7 goldaw berýäris",
         "address": "Taras Şewçenko köçesi 34. Daşkent, Mirabad Özbegistan"
-    },
-    "numbers": {
-        "text_1": "Kampaniýamyz, dizel generatorlarynyň 140-dan gowrak modelini import edýär",
-        "text_2": "Kampaniýamyz, 8-den gowrak marka - senagat dizel generatorlaryny öndürijiler bilen hyzmatdaşlyk edýär",
-        "text_3": "Biziň kompaniýamyz 10 ýyldan gowrak wagt bäri senagat dizel generatorlaryny import edýär we oturtýar"
     }
 }

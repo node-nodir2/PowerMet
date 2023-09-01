@@ -87,7 +87,7 @@ const Footer = ({ language, lang }) => {
                             </li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div>
                         <p className="block font-bold text-[20px] text-white">
                             {language?.footer?.contact}
                         </p>
@@ -109,7 +109,7 @@ const Footer = ({ language, lang }) => {
                                 powermet.infor@gmail.com
                             </Link>
                             <Link
-                                href="tel+998900013666"
+                                href="tel:+998900013666"
                                 className="inline-block font-normal text-base text-white"
                                 aria-label="Company's phone number"
                             >

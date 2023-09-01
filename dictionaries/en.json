@@ -85,7 +85,13 @@
         "title": "About Us",
         "text": "Our campaign provides services such as the sale and installation of generators in any assortment.",
         "documentation": "Documentation",
-        "numbers": "Numbers"
+        "numbers": {
+            "title": "About our company",
+            "sub_text": "СP POWER MET INTERNATIONAL LLC is your ideal partner in the service and import of industrial generators. Our company has specialized in servicing and supporting all leading brands of manufacturers for over 10 years. We are proud to cooperate with more than 8 brands of generator manufacturers and offer more than 140 models of generators that we successfully import. Quality and reliable solutions for your energy needs will keep your business running smoothly. Our experienced and professional staff guarantees high quality service and prompt deliveries. Put your worries on our shoulders and enjoy the reliability and efficiency of our generator solutions. Trust us and feel the difference - your success is our concern!",
+            "text_1": "Our campaign imports over 140 models of industrial diesel generators",
+            "text_2": "Our campaign cooperates with more than 8 brands - manufacturers of industrial diesel generators",
+            "text_3": "Our company has been importing and installing industrial diesel generators for over 10 years"
+        }
     },
     "hero_partner": {
         "link": "Our partners",
@@ -103,10 +109,5 @@
         "title": "ALWAYS TO CONTACT US 24/7",
         "text": "We provide 24/7 support to our customers",
         "address": "Taras shevchenko street.34.Tashkent,Mirabad Uzbekistan"
-    },
-    "numbers": {
-        "text_1": "Our campaign imports over 140 models of industrial diesel generators",
-        "text_2": "Our campaign cooperates with more than 8 brands - manufacturers of industrial diesel generators",
-        "text_3": "Our company has been importing and installing industrial diesel generators for over 10 years"
     }
 }

@@ -85,7 +85,13 @@
         "title": "Biz haqimizda",
         "text": "Bizning aksiyamiz har qanday assortimentdagi generatorlarni sotish va o'rnatish kabi xizmatlarni taqdim etadi.",
         "documentation": "Hujjatlar",
-        "numbers": "Raqamlar"
+        "numbers": {
+            "title": "Bizning kompaniya haqida",
+            "sub_text": "MChJ QK POWER MET INTERNATIONAL - sanoat generatorlariga xizmat ko'rsatish va import qilish bo'yicha sizning ideal hamkoringiz. Bizning kompaniyamiz 10 yildan ortiq vaqt davomida barcha etakchi ishlab chiqaruvchilarga xizmat ko'rsatish va qo'llab-quvvatlashga ixtisoslashgan. Biz generator ishlab chiqaruvchilarning 8 dan ortiq brendlari bilan hamkorlik qilishdan faxrlanamiz va muvaffaqiyatli import qilinadigan 140 dan ortiq generator modellarini taklif etamiz. Energiyaga bo'lgan ehtiyojingiz uchun sifatli va ishonchli echimlar biznesingizni muammosiz ishlashini ta'minlaydi. Tajribali va professional xodimlarimiz yuqori sifatli xizmat va tezkor yetkazib berishni kafolatlaydi. Tashvishlaringizni bizning yelkamizga qo'ying va generator yechimlarimiz ishonchliligi va samaradorligidan bahramand bo'ling. Bizga ishoning va farqni his qiling - sizning muvaffaqiyatingiz bizning tashvishimiz!",
+            "text_1": "Bizning kampaniyamiz 140 dan ortiq sanoat dizel generatorlarini import qiladi",
+            "text_2": "Bizning aksiyamiz 8 dan ortiq brendlar - sanoat dizel generatorlari ishlab chiqaruvchilari bilan hamkorlik qiladi",
+            "text_3": "Kompaniyamiz 10 yildan ortiq vaqtdan beri sanoat dizel generatorlarini import qiladi va o'rnatadi"
+        }
     },
     "hero_partner": {
         "link": "Bizning hamkorlar",
@@ -103,10 +109,5 @@
         "title": "BIZGA 24/7 BOG'LANISH UCHUN HAMMA YO'LLARI",
         "text": "Biz mijozlarimizga 24/7 yordam beramiz",
         "address": "Taras Shevchenko ko'chasi 34. Toshkent, Mirobod O'zbekiston"
-    },
-    "numbers": {
-        "text_1": "Bizning kampaniyamiz 140 dan ortiq sanoat dizel generatorlarini import qiladi",
-        "text_2": "Bizning aksiyamiz 8 dan ortiq brendlar - sanoat dizel generatorlari ishlab chiqaruvchilari bilan hamkorlik qiladi",
-        "text_3": "Kompaniyamiz 10 yildan ortiq vaqtdan beri sanoat dizel generatorlarini import qiladi va o'rnatadi"
     }
 }
