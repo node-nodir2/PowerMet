@@ -49,6 +49,7 @@ export default function RootLayout({ children, params: { lang } }) {
                     </Link>
                     <Link
                         href="tel:+998980013666"
+                        target="_blank"
                         className="w-[60px] sm:w-[80px] h-[60px] sm:h-[80px]"
                     >
                         <Image src={Call} width={80} height={80} alt="call" />
