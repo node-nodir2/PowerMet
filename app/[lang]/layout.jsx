@@ -38,9 +38,6 @@ export default function RootLayout({ children, params: { lang } }) {
                 {children}
                 <Footer language={language} lang={lang} />
                 <Link
-                    onClick={() => {
-                        setShowContact(true);
-                    }}
                     href="https://telegram.me/GeneratorUZB_Bot"
                     target="_blank"
                     className="flex items-center justify-center fixed bottom-[92px] sm:bottom-[108px] right-[20px] sm:right-[100px] w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] p-2 !z-50 animate-bounce"
@@ -51,7 +48,7 @@ export default function RootLayout({ children, params: { lang } }) {
                     onClick={() => {
                         setShowContact(true);
                     }}
-                    href="tel:+998900013666"
+                    href="tel:+998980013666"
                     className="flex items-center justify-center fixed bottom-10 right-[20px] sm:right-[100px] w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] !z-50 animate-bounce"
                 >
                     <Image src={Call} width={80} height={80} alt="call" />
