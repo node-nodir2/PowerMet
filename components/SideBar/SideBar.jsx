@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Logo from "../../public/Images/logoWhite.png";
-import Call from "../../public/Images/call.svg";
 
 const SideBar = ({ lang, language, setShowModal, showModal }) => {
     return (
@@ -96,13 +95,7 @@ const SideBar = ({ lang, language, setShowModal, showModal }) => {
                         href={`tel:+998980013666`}
                         className="flex items-center"
                     >
-                        <Image
-                            src={Call}
-                            width={20}
-                            height={20}
-                            alt="call-image"
-                        />
-                        <p className="font-medium text-base text-[#333] ml-2 hover:text-[#da291c] transition ease-in-out duration-200">
+                        <p className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200">
                             +998 98 001 3 666
                         </p>
                     </Link>

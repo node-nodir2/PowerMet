@@ -34,19 +34,26 @@ export default function RootLayout({ children, params: { lang } }) {
                 <Header language={language} lang={lang} />
                 {children}
                 <Footer language={language} lang={lang} />
-                <Link
-                    href="https://telegram.me/GeneratorUZB_Bot"
-                    target="_blank"
-                    className="flex items-center justify-center fixed bottom-[92px] sm:bottom-[108px] right-[20px] sm:right-[100px] w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] p-2 !z-50 animate-bounce"
-                >
-                    <Image src={Telegram} width={55} height={55} alt="call" />
-                </Link>
-                <Link
-                    href="tel:+998980013666"
-                    className="flex items-center justify-center fixed bottom-10 right-[20px] sm:right-[100px] w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] !z-50 animate-bounce"
-                >
-                    <Image src={Call} width={80} height={80} alt="call" />
-                </Link>
+                <div className="fixed bottom-10 right-[20px] sm:right-[100px] z-50 flex items-center justify-center flex-col space-y-5 sm:space-y-7 animate-bounce">
+                    <Link
+                        href="https://telegram.me/GeneratorUZB_Bot"
+                        target="_blank"
+                        className="flex items-center justify-center w-[38px] sm:w-[55px] h-[38px] sm:h-[55px] rounded-full bg-[#85d8ff] outline outline-[5px] sm:outline-[7px] outline-offset-0 outline-[#c4e8ff]"
+                    >
+                        <Image
+                            src={Telegram}
+                            width={45}
+                            height={45}
+                            alt="call"
+                        />
+                    </Link>
+                    <Link
+                        href="tel:+998980013666"
+                        className="w-[60px] sm:w-[80px] h-[60px] sm:h-[80px]"
+                    >
+                        <Image src={Call} width={80} height={80} alt="call" />
+                    </Link>
+                </div>
             </body>
         </html>
     );
