@@ -15,6 +15,8 @@ const SideBar = ({ lang, language, setShowModal, showModal }) => {
                         <Image
                             className="w-[135px] h-[40px]"
                             src={Logo}
+                            width={500}
+                            height={500}
                             alt="site-logo"
                         />
                     </Link>
