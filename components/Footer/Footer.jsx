@@ -45,6 +45,8 @@ const Footer = ({ language, lang }) => {
                             <Image
                                 className="w-[170px] sm:w-[220px] h-[50px] sm:h-[60px]"
                                 src={Logo}
+                                width={1000}
+                                height={1000}
                                 priority={true}
                                 alt="site-logo"
                             />
