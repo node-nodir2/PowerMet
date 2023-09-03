@@ -7,10 +7,8 @@ import { useEffect, useState } from "react";
 import { getDictionary } from "@/get-dictionary";
 
 import Head from "./head";
-import Modal from "@/components/Modal/Modal";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import ContactForm from "@/components/ContactForm/ContactForm";
 
 import Call from "@/public/Images/call-fixed.svg";
 import Telegram from "@/public/Images/telegram.png";
@@ -22,7 +20,6 @@ export async function generateStaticParams() {
 }
 
 export default function RootLayout({ children, params: { lang } }) {
-    const [showContact, setShowContact] = useState(false);
     const [language, setLanguage] = useState({});
 
     useEffect(() => {
@@ -45,28 +42,11 @@ export default function RootLayout({ children, params: { lang } }) {
                     <Image src={Telegram} width={55} height={55} alt="call" />
                 </Link>
                 <Link
-                    onClick={() => {
-                        setShowContact(true);
-                    }}
                     href="tel:+998980013666"
                     className="flex items-center justify-center fixed bottom-10 right-[20px] sm:right-[100px] w-[60px] sm:w-[80px] h-[60px] sm:h-[80px] !z-50 animate-bounce"
                 >
                     <Image src={Call} width={80} height={80} alt="call" />
                 </Link>
-
-                <Modal
-                    change={false}
-                    isVisible={showContact}
-                    onClose={() => {
-                        setShowContact(false);
-                    }}
-                >
-                    <ContactForm
-                        language={language}
-                        modal
-                        closeModal={() => setShowContact(false)}
-                    />
-                </Modal>
             </body>
         </html>
     );
