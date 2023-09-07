@@ -38,7 +38,7 @@ export default function RootLayout({ children, params: { lang } }) {
                     <Link
                         href="https://telegram.me/GeneratorUZB_Bot"
                         target="_blank"
-                        className="flex items-center justify-center w-[38px] sm:w-[55px] h-[38px] sm:h-[55px] rounded-full bg-[#85d8ff] outline outline-[5px] sm:outline-[7px] outline-offset-0 outline-[#c4e8ff]"
+                        className="flex items-center justify-center w-[38px] sm:w-[55px] h-[38px] sm:h-[55px] rounded-full bg-[#85d8ff] outline outline-[5px] sm:outline-[7px] outline-offset-0 outline-[#c4e8ff] amo-button js-amo-control amo-button--telegram"
                     >
                         <Image
                             src={Telegram}
