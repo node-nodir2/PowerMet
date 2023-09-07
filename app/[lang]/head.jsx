@@ -18,18 +18,18 @@ export default function Head() {
             <link rel="canonical" href="https://generatoruz.com/" />
             <meta
                 name="keywords"
-                content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
+                content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly."
             />
             <meta property="og:site_name" content="Generator" />
             <meta
                 property="og:title"
-                content="Generator - POWERFUL INDUSTRIAL DIESEL GENERATORS"
+                content="Generators - POWERFUL INDUSTRIAL DIESEL GENERATORS"
             />
             <meta property="og:url" content="https://generatoruz.com/" />
             <meta property="og:type" content="website" />
             <meta
                 property="og:description"
-                content="Power Met International are experts in importing and installing generator systems to keep your business running smoothly."
+                content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly."
             />
             <meta property="og:image" content="/public/Images/LogoBlack.png" />
             <meta property="og:image:width" content="500" />
