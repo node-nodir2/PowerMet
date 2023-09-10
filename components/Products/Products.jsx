@@ -10,6 +10,7 @@ import Modal from "../Modal/Modal";
 
 import Up from "@/public/Images/chevron-right.svg";
 import Mark_x from "@/public/Images/x_black.svg";
+import Loader from "@/public/Images/spinner.svg";
 
 import "./product.css";
 
@@ -207,7 +208,7 @@ const Product = ({ language }) => {
                             </form>
                         ) : null}
                     </div>
-                    <div className="grid grid-cols-1 gap-5 mx-auto sm:grid-cols-3 sm:mx-0">
+                    <div className="grid grid-cols-1 gap-5 mx-auto sm:grid-cols-3">
                         <AnimatePresence>
                             {products.length ? (
                                 products?.map((product) => (
@@ -274,9 +275,12 @@ const Product = ({ language }) => {
                                 ))
                             ) : (
                                 <motion.div {...motionConfig} key={0}>
-                                    <p className="font-normal text-base sm:text-xl text-gray-700">
-                                        {language?.toast?.not_found} 😥
-                                    </p>
+                                    <Image
+                                        src={Loader}
+                                        width={100}
+                                        height={100}
+                                        alt="loader"
+                                    />
                                 </motion.div>
                             )}
                         </AnimatePresence>
