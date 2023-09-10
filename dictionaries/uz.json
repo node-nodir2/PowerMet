@@ -32,6 +32,7 @@
     },
     "catalog": {
         "title": "Bizning katalog",
+        "text": "Barcha generatorlar shovqinni o'chirish qutisida ta'minlanadi",
         "model": "Model",
         "fuel_type": "Yoqilg'i turi",
         "power": "Kuch",

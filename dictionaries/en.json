@@ -32,6 +32,7 @@
     },
     "catalog": {
         "title": "Our catalog",
+        "text": "All generators are supplied in a noise-canceling case",
         "model": "Model",
         "fuel_type": "Fuel type",
         "power": "Power",

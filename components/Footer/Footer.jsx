@@ -9,6 +9,8 @@ import { baseUrl } from "@/data";
 
 import Logo from "../../public/Images/logoWhite.png";
 import Arrow from "../../public/Images/arrow-up.svg";
+import Instagram from "../../public/Images/instagram.png";
+import Telegram from "../../public/Images/telegram-2.png";
 
 const Footer = ({ language, lang }) => {
     const [number, setNumber] = useState("");
@@ -117,6 +119,29 @@ const Footer = ({ language, lang }) => {
                             >
                                 +998 98 001 3 666
                             </Link>
+                            <div className="space-x-2">
+                                <Link className="inline-block" href="">
+                                    <Image
+                                        className="w-[40px] h-[40px]"
+                                        src={Instagram}
+                                        width={50}
+                                        height={50}
+                                        alt="instagram"
+                                    />
+                                </Link>
+                                <Link
+                                    className="inline-block"
+                                    href="https://telegram.me/powermet_bot"
+                                >
+                                    <Image
+                                        className="w-[40px] h-[40px]"
+                                        src={Telegram}
+                                        width={50}
+                                        height={50}
+                                        alt="instagram"
+                                    />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div>

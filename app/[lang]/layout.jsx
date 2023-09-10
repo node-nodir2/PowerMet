@@ -36,23 +36,18 @@ export default function RootLayout({ children, params: { lang } }) {
                 <Footer language={language} lang={lang} />
                 <div className="fixed bottom-10 right-[20px] sm:right-[100px] z-50 flex items-center justify-center flex-col space-y-5 sm:space-y-7 animate-bounce">
                     <Link
-                        href="https://telegram.me/GeneratorUZB_Bot"
+                        href="https://telegram.me/powermet_bot"
                         target="_blank"
-                        className="flex items-center justify-center w-[38px] sm:w-[55px] h-[38px] sm:h-[55px] rounded-full bg-[#85d8ff] outline outline-[5px] sm:outline-[7px] outline-offset-0 outline-[#c4e8ff] amo-button js-amo-control amo-button--telegram"
+                        className="flex items-center justify-center w-[50px] sm:w-[60px] h-[50px] sm:h-[60px]"
                     >
-                        <Image
-                            src={Telegram}
-                            width={45}
-                            height={45}
-                            alt="call"
-                        />
+                        <Image src={Telegram} width={80} height={80} alt="call" />
                     </Link>
                     <Link
                         href="tel:+998980013666"
                         target="_blank"
-                        className="w-[60px] sm:w-[80px] h-[60px] sm:h-[80px]"
+                        className="w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] p-2 border-2 border-[#da291c] rounded-full bg-white bg-opacity-80"
                     >
-                        <Image src={Call} width={80} height={80} alt="call" />
+                        <Image src={Call} width={100} height={100} alt="call" />
                     </Link>
                 </div>
             </body>

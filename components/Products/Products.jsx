@@ -81,6 +81,10 @@ const Product = ({ language }) => {
                 <h2 className="font-bold text-[40px] sm:text-[48px] text-[#333] text-center mt-5">
                     {language?.catalog?.title}
                 </h2>
+                <p className="font-medium text-[16px] md:text-[18px] text-black opacity-80 text-center mt-2 sm:mt-4">
+                    {" "}
+                    {language?.catalog?.text}
+                </p>
                 <div className="flex flex-col lg:flex-row justify-center items-start lg:justify-between space-y-[40px] lg:space-y-0 lg:space-x-[40px] !py-[20px] lg:!py-[50px]">
                     <div className="max-w-[300px] w-full mx-auto lg:mx-0">
                         <button
@@ -276,6 +280,7 @@ const Product = ({ language }) => {
                             ) : (
                                 <motion.div {...motionConfig} key={0}>
                                     <Image
+                                        className="w-[60px] sm:w-[100px] h-[60px] sm:h-[100px]"
                                         src={Loader}
                                         width={100}
                                         height={100}

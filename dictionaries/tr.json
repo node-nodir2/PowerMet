@@ -32,6 +32,7 @@
     },
     "catalog": {
         "title": "Biziň katalogymyz",
+        "text": "Generatorlaryň hemmesi ses çykaryjy ýagdaýda üpjün edilýär",
         "model": "Model",
         "fuel_type": "Uelangyç görnüşi",
         "power": "Kuwwat",
