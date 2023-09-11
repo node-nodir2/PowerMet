@@ -182,7 +182,7 @@ const Footer = ({ language, lang }) => {
                     <Link
                         target="_blank"
                         className="inline-block bg-transparent"
-                        href="https://telegram.me/powermet_bot"
+                        href="https://telegram.me/powermet_channel"
                     >
                         <Image
                             className="w-[40px] h-[40px]"

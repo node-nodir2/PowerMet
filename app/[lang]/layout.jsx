@@ -28,13 +28,13 @@ export default function RootLayout({ children, params: { lang } }) {
 
     return (
         <html lang={lang}>
-            <Head />
+            <Head language={language} />
             <body>
                 <Toaster />
                 <Header language={language} lang={lang} />
                 {children}
                 <Footer language={language} lang={lang} />
-                <div className="fixed bottom-10 right-[20px] sm:right-[100px] z-50 flex items-center justify-center flex-col space-y-5 sm:space-y-7 animate-bounce">
+                <div className="fixed bottom-10 right-[20px] sm:right-[100px] z-50 flex items-center justify-center flex-col space-y-1 sm:space-y-2 animate-bounce">
                     <Link
                         href="https://telegram.me/powermet_bot"
                         target="_blank"

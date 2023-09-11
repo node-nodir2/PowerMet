@@ -1,13 +1,13 @@
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
-export default function Head() {
+export default function Head({ language }) {
     return (
         <head>
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <title>POWERFUL INDUSTRIAL DIESEL GENERATORS</title>
+            <title>{language?.title}</title>
             <link rel="icon" href="/favicon.ico" sizes="any" />
             <link rel="icon" href="/apple-icon.png" sizes="any" />
             <meta
@@ -23,7 +23,7 @@ export default function Head() {
             <meta property="og:site_name" content="Generator" />
             <meta
                 property="og:title"
-                content="Generators - POWERFUL INDUSTRIAL DIESEL GENERATORS"
+                content={`Generators - ${language?.title}`}
             />
             <meta property="og:url" content="https://generatoruz.com/" />
             <meta property="og:type" content="website" />
