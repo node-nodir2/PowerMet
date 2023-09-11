@@ -174,8 +174,8 @@ const Footer = ({ language, lang }) => {
                         <Image
                             className="w-[40px] h-[40px]"
                             src={Instagram}
-                            width={50}
-                            height={50}
+                            width={40}
+                            height={40}
                             alt="instagram"
                         />
                     </Link>
@@ -187,8 +187,8 @@ const Footer = ({ language, lang }) => {
                         <Image
                             className="w-[40px] h-[40px]"
                             src={Telegram}
-                            width={50}
-                            height={50}
+                            width={40}
+                            height={40}
                             alt="instagram"
                         />
                     </Link>

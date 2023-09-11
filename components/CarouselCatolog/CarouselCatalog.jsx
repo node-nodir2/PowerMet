@@ -80,7 +80,7 @@ const CarouselCatalog = ({ language, lang }) => {
                                         className="max-w-[270px] bg-white rounded-md shadow-card_shadow pt-4"
                                     >
                                         <Image
-                                            className="w-[236px] h-[165px] rounded-md"
+                                            className="w-[236px] h-[165px] rounded-md object-cover"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
                                             width={236}
                                             height={165}
