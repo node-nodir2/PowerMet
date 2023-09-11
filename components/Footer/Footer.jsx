@@ -117,29 +117,6 @@ const Footer = ({ language, lang }) => {
                             >
                                 +998 98 001 3 666
                             </Link>
-                            <div className="space-x-2">
-                                <Link className="inline-block" href="">
-                                    <Image
-                                        className="w-[40px] h-[40px]"
-                                        src={Instagram}
-                                        width={50}
-                                        height={50}
-                                        alt="instagram"
-                                    />
-                                </Link>
-                                <Link
-                                    className="inline-block"
-                                    href="https://telegram.me/powermet_bot"
-                                >
-                                    <Image
-                                        className="w-[40px] h-[40px]"
-                                        src={Telegram}
-                                        width={50}
-                                        height={50}
-                                        alt="instagram"
-                                    />
-                                </Link>
-                            </div>
                         </div>
                     </div>
                     <div>
@@ -183,9 +160,39 @@ const Footer = ({ language, lang }) => {
                     />
                 </Link>
             </div>
-            <p className="container sm:!p-0 font-normal text-[12px] text-[#D9DBE1] !mt-[18px]">
-                СП OOO «POWER MET INTERNATIONAL»
-            </p>
+            <div className="container flex items-center justify-between sm:!p-0 !mt-[18px]">
+                <p className=" font-normal text-[12px] text-[#D9DBE1]">
+                    СП OOO «POWER MET INTERNATIONAL»
+                </p>
+                <div className="space-x-2">
+                    <Link
+                        target="_blank"
+                        className="inline-block bg-transparent"
+                        href="https://www.instagram.com/powermet_generators"
+                    >
+                        <Image
+                            className="w-[40px] h-[40px]"
+                            src={Instagram}
+                            width={50}
+                            height={50}
+                            alt="instagram"
+                        />
+                    </Link>
+                    <Link
+                        target="_blank"
+                        className="inline-block bg-transparent"
+                        href="https://telegram.me/powermet_bot"
+                    >
+                        <Image
+                            className="w-[40px] h-[40px]"
+                            src={Telegram}
+                            width={50}
+                            height={50}
+                            alt="instagram"
+                        />
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 };
