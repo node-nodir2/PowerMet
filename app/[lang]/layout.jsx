@@ -10,7 +10,7 @@ import Head from "./head";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
-import Call from "@/public/Images/call-fixed.svg";
+import Call from "@/public/Images/phone.svg";
 import Telegram from "@/public/Images/telegram.png";
 
 import "./globals.css";
@@ -45,7 +45,7 @@ export default function RootLayout({ children, params: { lang } }) {
                     <Link
                         href="tel:+998980013666"
                         target="_blank"
-                        className="w-[50px] sm:w-[60px] h-[50px] sm:h-[60px] p-2 border-2 border-[#da291c] rounded-full bg-white bg-opacity-80"
+                        className="w-[80px] sm:w-[90px] h-[80px] sm:h-[90px]"
                     >
                         <Image src={Call} width={100} height={100} alt="call" />
                     </Link>
