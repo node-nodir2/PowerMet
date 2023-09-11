@@ -1,18 +1,18 @@
 "use client";
 import Image from "next/image";
 
-import Partner1 from "@/public/Images/partner1.png";
-import Partner2 from "@/public/Images/partner2.png";
-import Partner3 from "@/public/Images/partner3.png";
-import Partner4 from "@/public/Images/partner4.png";
-import Partner5 from "@/public/Images/partner5.png";
-import Partner6 from "@/public/Images/partner6.png";
-import Partner7 from "@/public/Images/partner7.png";
-import Partner8 from "@/public/Images/partner8.png";
-import Partner9 from "@/public/Images/partner9.png";
-import Partner10 from "@/public/Images/partner10.png";
-import Partner11 from "@/public/Images/partner11.png";
-import Partner12 from "@/public/Images/partner12.png";
+import Partner1 from "@/public/Images/partner1.webp";
+import Partner2 from "@/public/Images/partner2.webp";
+import Partner3 from "@/public/Images/partner3.webp";
+import Partner4 from "@/public/Images/partner4.webp";
+import Partner5 from "@/public/Images/partner5.webp";
+import Partner6 from "@/public/Images/partner6.webp";
+import Partner7 from "@/public/Images/partner7.webp";
+import Partner8 from "@/public/Images/partner8.webp";
+import Partner9 from "@/public/Images/partner9.webp";
+import Partner10 from "@/public/Images/partner10.webp";
+import Partner11 from "@/public/Images/partner11.webp";
+import Partner12 from "@/public/Images/partner12.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

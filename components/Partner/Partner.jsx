@@ -3,7 +3,7 @@ import Image from "next/image";
 import Client from "../Clients/Clients";
 
 // Images
-import PartnerImg from "@/public/Images/partner.png";
+import PartnerImg from "@/public/Images/partner.webp";
 import PartnerImgMobile from "@/public/Images/news.png";
 
 const Arrow = (
