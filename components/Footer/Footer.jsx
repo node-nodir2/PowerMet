@@ -161,7 +161,7 @@ const Footer = ({ language, lang }) => {
                     />
                 </Link>
             </div>
-            <div className="container flex flex-col sm:flex-row items-center justify-between sm:!p-0 !mt-[18px]">
+            <div className="container flex flex-col sm:flex-row items-start sm:items-center justify-between sm:p-0 !mt-[18px] space-y-3 sm:space-y-0">
                 <p className=" font-normal text-[12px] text-[#D9DBE1]">
                     СП OOO «POWER MET INTERNATIONAL»
                 </p>
