@@ -270,6 +270,9 @@ const Product = ({ language }) => {
                                                     setShowModal(true);
                                                     setItemProperties(product);
                                                 }}
+                                                aria-label={
+                                                    language?.catalog?.in_detail
+                                                }
                                                 className="w-full mx-auto font-medium text-[18px] text-white text-center py-2 bg-[#da291c] rounded-lg mt-[14px]"
                                             >
                                                 {language?.catalog?.in_detail}
@@ -361,7 +364,7 @@ const Product = ({ language }) => {
                             <Link
                                 target="_blank"
                                 download="Products pdf"
-                                aria-label="download_pdf_of_product"
+                                aria-label={language?.catalog?.download}
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >
@@ -411,7 +414,7 @@ const Product = ({ language }) => {
                             <Link
                                 target="_blank"
                                 download="Products pdf"
-                                aria-label="download_pdf_of_product"
+                                aria-label={language?.catalog?.download}
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >

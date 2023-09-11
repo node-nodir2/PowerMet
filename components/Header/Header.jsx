@@ -144,7 +144,7 @@ const Header = ({ language, lang }) => {
                                     <Link
                                         href="tel:+998980013666"
                                         className="font-normal text-base text-white hover:text-[#da291c] transition ease-in-out duration-200 opacity-75 ml-2"
-                                        aria-label="phone_number_of_Company's"
+                                        aria-label="+998 98 001 3 666"
                                     >
                                         +998 98 001 3 666
                                     </Link>

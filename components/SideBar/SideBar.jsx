@@ -96,6 +96,7 @@ const SideBar = ({ lang, language, setShowModal, showModal }) => {
                     <Link
                         href={`tel:+998980013666`}
                         className="flex items-center"
+                        aria-label="+998 98 001 3 666"
                     >
                         <p className="font-medium text-base text-[#333] hover:text-[#da291c] transition ease-in-out duration-200">
                             +998 98 001 3 666

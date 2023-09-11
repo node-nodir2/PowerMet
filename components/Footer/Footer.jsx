@@ -107,13 +107,14 @@ const Footer = ({ language, lang }) => {
                             <Link
                                 className="not-italic inline-block font-normal text-base text-white"
                                 href="mailto:powermet.infor@gmail.com"
+                                aria-label="powermet.infor@gmail.com"
                             >
                                 powermet.infor@gmail.com
                             </Link>
                             <Link
                                 href="tel:+998900013666"
                                 className="inline-block font-normal text-base text-white"
-                                aria-label="Company's_phone_number"
+                                aria-label="+998 98 001 3 666"
                             >
                                 +998 98 001 3 666
                             </Link>

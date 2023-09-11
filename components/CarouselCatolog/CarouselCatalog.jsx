@@ -127,7 +127,7 @@ const CarouselCatalog = ({ language, lang }) => {
                                             </p>
                                             <button
                                                 type="button"
-                                                aria-label="Show_datails_of_product"
+                                                aria-label={language?.catalog?.in_detail}
                                                 onClick={() => {
                                                     setShowModal(true);
                                                     setItemProperties(product);

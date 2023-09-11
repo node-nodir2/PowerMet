@@ -82,7 +82,7 @@ const ContactForm = ({ language, modal, closeModal }) => {
                     <Link
                         href="tel:+998980013666"
                         className="block font-normal text-[30px] text-white text-center leading-8"
-                        aria-label="To fill form of consultation"
+                        aria-label="+998 98 001 3 666"
                     >
                         +998 98 001 3 666
                     </Link>
