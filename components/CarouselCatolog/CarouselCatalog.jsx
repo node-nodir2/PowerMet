@@ -80,12 +80,12 @@ const CarouselCatalog = ({ language, lang }) => {
                                         className="max-w-[270px] bg-white rounded-md shadow-card_shadow pt-4"
                                     >
                                         <Image
-                                            className="w-full h-[165px] rounded-md"
+                                            className="w-[236px] h-[165px] rounded-md"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
-                                            priority={true}
-                                            alt="generator"
                                             width={236}
                                             height={165}
+                                            priority={true}
+                                            alt="generator"
                                         />
                                         <div
                                             className="px-[18px] pb-5"
@@ -127,6 +127,7 @@ const CarouselCatalog = ({ language, lang }) => {
                                             </p>
                                             <button
                                                 type="button"
+                                                aria-label="Show_datails_of_product"
                                                 onClick={() => {
                                                     setShowModal(true);
                                                     setItemProperties(product);
@@ -168,8 +169,6 @@ const CarouselCatalog = ({ language, lang }) => {
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
                         alt="product-image"
                         priority={true}
-                        width={306}
-                        height={195}
                     />
                     {itemProperties?.category?.name === "GASOLINE" ||
                     itemProperties?.category?.name === "DIESEL" ? (
@@ -213,7 +212,8 @@ const CarouselCatalog = ({ language, lang }) => {
                             </ul>
                             <Link
                                 target="_blank"
-                                download="Nodirbek's resume.pdf"
+                                download="Download_pdf_of_product"
+                                aria-label="Download_pdf_of_product"
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >
@@ -262,7 +262,8 @@ const CarouselCatalog = ({ language, lang }) => {
                             </ul>
                             <Link
                                 target="_blank"
-                                download="Nodirbek's resume.pdf"
+                                download="Download_pdf_of_product"
+                                aria-label="Download_pdf_of_product"
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >

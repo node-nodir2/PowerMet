@@ -222,8 +222,10 @@ const Product = ({ language }) => {
                                         className="max-w-[270px] bg-white rounded-md shadow-card_shadow cursor-pointer pt-4"
                                     >
                                         <Image
-                                            className="max-w-[236px] w-full h-[165px] rounded-md"
+                                            className="w-[236px] h-[165px] rounded-md"
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
+                                            width={236}
+                                            height={165}
                                             priority={true}
                                             alt="generator"
                                         />
@@ -358,7 +360,8 @@ const Product = ({ language }) => {
                             </ul>
                             <Link
                                 target="_blank"
-                                download="Nodirbek's resume.pdf"
+                                download="Products pdf"
+                                aria-label="download_pdf_of_product"
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >
@@ -407,7 +410,7 @@ const Product = ({ language }) => {
                             </ul>
                             <Link
                                 target="_blank"
-                                download="Nodirbek's resume.pdf"
+                                download="Products pdf"
                                 aria-label="download_pdf_of_product"
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
