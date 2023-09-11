@@ -73,10 +73,16 @@ const Hero = ({ language, lang }) => {
                 </SwiperSlide>
                 <div className="container absolute inset-0 top-[110px] !pt-[75.7px] sm:!pt-[200px] z-10">
                     <div className="max-w-[650px] w-full">
-                        <h1 className="font-bold text-[30px] md:text-[40px] text-white uppercase">
+                        <h1
+                            className="font-bold text-[30px] md:text-[40px] text-white uppercase"
+                            priority="true"
+                        >
                             {language?.hero?.title}
                         </h1>
-                        <p className="font-normal text-[18px] md:text-[24px] text-white opacity-80 mt-[10px] md:mt-[16px]">
+                        <p
+                            className="font-normal text-[18px] md:text-[24px] text-white opacity-80 mt-[10px] md:mt-[16px]"
+                            priority="true"
+                        >
                             {language?.hero?.text}
                         </p>
                         <Link
