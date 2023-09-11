@@ -47,8 +47,6 @@ const Footer = ({ language, lang }) => {
                             <Image
                                 className="w-[170px] sm:w-[220px] h-[50px] sm:h-[60px]"
                                 src={Logo}
-                                width={1000}
-                                height={1000}
                                 priority={true}
                                 alt="site-logo"
                             />
@@ -115,7 +113,7 @@ const Footer = ({ language, lang }) => {
                             <Link
                                 href="tel:+998900013666"
                                 className="inline-block font-normal text-base text-white"
-                                aria-label="Company's phone number"
+                                aria-label="Company's_phone_number"
                             >
                                 +998 98 001 3 666
                             </Link>

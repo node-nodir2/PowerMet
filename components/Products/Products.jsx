@@ -226,8 +226,6 @@ const Product = ({ language }) => {
                                             src={`${baseUrl}/public/uploads/${product?.image}`}
                                             priority={true}
                                             alt="generator"
-                                            width={236}
-                                            height={161}
                                         />
                                         <div className="px-[18px] pb-5">
                                             <h2 className="font-medium text-[20px] text-black">
@@ -282,8 +280,6 @@ const Product = ({ language }) => {
                                     <Image
                                         className="w-[60px] sm:w-[100px] h-[60px] sm:h-[100px]"
                                         src={Loader}
-                                        width={100}
-                                        height={100}
                                         alt="loader"
                                     />
                                 </motion.div>
@@ -319,8 +315,6 @@ const Product = ({ language }) => {
                         src={`${baseUrl}/public/uploads/${itemProperties?.image}`}
                         alt="product-image"
                         priority={true}
-                        width={300}
-                        height={195}
                     />
                     {itemProperties?.category?.name === "GASOLINE" ||
                     itemProperties?.category?.name === "DIESEL" ? (
@@ -414,6 +408,7 @@ const Product = ({ language }) => {
                             <Link
                                 target="_blank"
                                 download="Nodirbek's resume.pdf"
+                                aria-label="download_pdf_of_product"
                                 href={`${baseUrl}/public/uploads/${itemProperties?.file}`}
                                 className="bg-[#da291c] flex items-center justify-center max-w-[270px] w-full h-[41px] mt-[34px] font-semibold text-[18px] text-white rounded-[8px] leading-normal"
                             >

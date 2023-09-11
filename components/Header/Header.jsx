@@ -23,7 +23,15 @@ import Search from "../../public/Images/search.svg";
 import Search_Black from "../../public/Images/search_black.svg";
 import SideBar from "../SideBar/SideBar";
 
-const languages = ["uz", "ru", "en", "tr", "tj", "kz", "kg"];
+const languages = [
+    { id: 0, name: "uz" },
+    { id: 1, name: "ru" },
+    { id: 2, name: "en" },
+    { id: 3, name: "tr" },
+    { id: 4, name: "tj" },
+    { id: 5, name: "kz" },
+    { id: 6, name: "kg" },
+];
 
 const Header = ({ language, lang }) => {
     const pathName = usePathname();
@@ -136,7 +144,7 @@ const Header = ({ language, lang }) => {
                                     <Link
                                         href="tel:+998980013666"
                                         className="font-normal text-base text-white hover:text-[#da291c] transition ease-in-out duration-200 opacity-75 ml-2"
-                                        aria-label="phone number of Company's "
+                                        aria-label="phone_number_of_Company's"
                                     >
                                         +998 98 001 3 666
                                     </Link>
@@ -181,11 +189,13 @@ const Header = ({ language, lang }) => {
                                     <ul className="absolute z-50 -left-[24px] top-[43px] lg:top-[47px] w-[80px] bg-gray-100 rounded-lg duration-500 !text-center">
                                         {languages.map((lan) => (
                                             <Link
-                                                key={lan}
-                                                href={redirectedPathName(lan)}
+                                                key={lan?.id}
+                                                href={redirectedPathName(
+                                                    lan?.name
+                                                )}
                                                 className="w-full flex font-medium justify-center items-center text-sm hover:bg-[#da291c] text-[#454545] hover:text-white duration-300 py-1 px-3 rounded-lg"
                                             >
-                                                {lan}
+                                                {lan?.name}
                                             </Link>
                                         ))}
                                     </ul>
@@ -204,8 +214,8 @@ const Header = ({ language, lang }) => {
                                 {bg ? (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
-                                        width={500}
-                                        height={500}
+                                        width={170}
+                                        height={50}
                                         src={Logo}
                                         alt="site-logo"
                                         priority={true}
@@ -213,8 +223,8 @@ const Header = ({ language, lang }) => {
                                 ) : (
                                     <Image
                                         className="hidden md:block w-[170px] h-[50px]"
-                                        width={500}
-                                        height={500}
+                                        width={170}
+                                        height={50}
                                         src={Logo_white}
                                         alt="site-logo"
                                         priority={true}
@@ -222,8 +232,8 @@ const Header = ({ language, lang }) => {
                                 )}
                                 <Image
                                     className="block md:hidden w-[45px] h-[40px]"
-                                    width={500}
-                                    height={500}
+                                    width={45}
+                                    height={40}
                                     src={Logo_P}
                                     alt="site-logo"
                                     priority={true}
@@ -429,6 +439,7 @@ const Header = ({ language, lang }) => {
                                 </div>
                                 <button
                                     className="flex flex-col justify-between !w-[30px] h-5 lg:hidden"
+                                    aria-label="humberger"
                                     onClick={() => {
                                         setShowModal(true);
                                     }}

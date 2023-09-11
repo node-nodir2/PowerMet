@@ -7,7 +7,7 @@ export default function Head() {
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <title>PowerMet</title>
+            <title>POWERFUL INDUSTRIAL DIESEL GENERATORS</title>
             <link rel="icon" href="/favicon.ico" sizes="any" />
             <link rel="icon" href="/apple-icon.png" sizes="any" />
             <meta
@@ -42,7 +42,10 @@ export default function Head() {
                 content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly."
             />
             <GoogleAnalytics measurementId="G-BNP9RQVHMX" />
-            <meta name="google-site-verification" content="UKmqey8Eiy9USFTyTAzQPBXcFD8M-_yk9b_9uPgvN_I" />
+            <meta
+                name="google-site-verification"
+                content="UKmqey8Eiy9USFTyTAzQPBXcFD8M-_yk9b_9uPgvN_I"
+            />
         </head>
     );
 }
