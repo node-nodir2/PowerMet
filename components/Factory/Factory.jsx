@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Image
-import FactotyImage from "@/public/Images/news2.png";
+import FactotyImage from "@/public/Images/news2.webp";
 
 const Factory = ({ language }) => {
     return (

@@ -4,7 +4,7 @@ import Client from "../Clients/Clients";
 
 // Images
 import PartnerImg from "@/public/Images/partner.webp";
-import PartnerImgMobile from "@/public/Images/news.png";
+import PartnerImgMobile from "@/public/Images/news.webp";
 
 const Arrow = (
     <svg

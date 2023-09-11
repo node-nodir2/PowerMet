@@ -1,21 +1,21 @@
 .hero-first {
-    background-image: url("../../public/Images/hero_car1.png");
+    background-image: url("../../public/Images/hero_car1.webp");
 }
 
 .hero-second {
-    background-image: url("../../public/Images/hero_car_third.png");
+    background-image: url("../../public/Images/hero_car_third.webp");
 }
 
 .hero-third {
-    background-image: url("../../public/Images/hero_car1.png");
+    background-image: url("../../public/Images/hero_car1.webp");
 }
 
 .hero-fourth {
-    background-image: url("../../public/Images/hero_car4.png");
+    background-image: url("../../public/Images/hero_car4.webp");
 }
 
 .hero-fifth {
-    background-image: url("../../public/Images/hero_car5.png");
+    background-image: url("../../public/Images/hero_car5.webp");
 }
 
 @media only screen and (max-width: 680px) {

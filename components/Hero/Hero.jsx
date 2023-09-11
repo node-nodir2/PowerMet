@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import Hero_bg_first from "@/public/Images/hero_car.jpg";
-import Hero_bg_second from "@/public/Images/hero_car1.png";
-import Hero_bg_third from "@/public/Images/hero_car_third.png";
+import Hero_bg_first from "@/public/Images/hero_car.webp";
+import Hero_bg_second from "@/public/Images/hero_car1.webp";
+import Hero_bg_third from "@/public/Images/hero_car_third.webp";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
