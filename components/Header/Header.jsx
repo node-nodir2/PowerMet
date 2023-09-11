@@ -190,6 +190,7 @@ const Header = ({ language, lang }) => {
                                         {languages.map((lan) => (
                                             <Link
                                                 key={lan?.id}
+                                                aria-label={lan?.name}
                                                 href={redirectedPathName(
                                                     lan?.name
                                                 )}
