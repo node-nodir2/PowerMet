@@ -2,8 +2,8 @@
 import Image from "next/image";
 
 // Images
-import Generator from "@/public/Images/big_generator.png";
-import Generator2 from "@/public/Images/big_generator2.png";
+import Generator from "@/public/Images/big_generator.webp";
+import Generator2 from "@/public/Images/big_generator2.webp";
 // import Plus from "@/public/Images/plus.png";
 
 // Import Swiper React components
