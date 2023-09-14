@@ -7,7 +7,7 @@ export default function Head({ language }) {
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <title>{language?.title}</title>
+            <title>POWERMET</title>
             <link rel="icon" href="/favicon.ico" sizes="any" />
             <link rel="icon" href="/apple-icon.png" sizes="any" />
             <meta
