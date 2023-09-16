@@ -7,7 +7,7 @@ export default function Head({ language }) {
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <title>POWERMET</title>
+            <title>POWERMET | Generators</title>
             <link rel="icon" href="/favicon.ico" sizes="any" />
             <link rel="icon" href="/apple-icon.png" sizes="any" />
             <meta
@@ -20,8 +20,8 @@ export default function Head({ language }) {
                 name="keywords"
                 content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly. We import and supply more than 8 leading manufacturing brands, including Shanghai, Volvo, Weichai, Baudouin, Ella, Perkins."
             />
-            <meta property="og:site_name" content="POWERMET" />
-            <meta property="og:title" content={`POWERMET`} />
+            <meta property="og:site_name" content="POWERMET | Generators" />
+            <meta property="og:title" content={`POWERMET | Generators`} />
             <meta property="og:url" content="https://generatoruz.com/ru" />
             <meta property="og:type" content="website" />
             <meta
