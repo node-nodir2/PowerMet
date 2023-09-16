@@ -15,7 +15,7 @@ export default function Head({ language }) {
                 content="GUApCcOuicBYb0iiuh91zrOtBZdzAoTtteo5aSU4fo8"
             />
             <meta name="theme-color" content="#ffffff" />
-            <link rel="canonical" href="Powermet Team" />
+            <link rel="canonical" href="Powermet_team" />
             <meta
                 name="keywords"
                 content="PowerMet International are experts in importing and installing generator systems to keep your business running smoothly. We import and supply more than 8 leading manufacturing brands, including Shanghai, Volvo, Weichai, Baudouin, Ella, Perkins."
